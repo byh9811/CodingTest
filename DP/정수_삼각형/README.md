@@ -1,6 +1,5 @@
 # 정수 삼각형
 
------------
 ### 문제 설명
 
 ![jpg_1](./1.PNG)
@@ -26,3 +25,7 @@
 ### URL
 
 https://programmers.co.kr/learn/courses/30/lessons/43105
+
+-----------
+## 풀이
+1. 
