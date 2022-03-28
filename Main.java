@@ -1,10 +1,11 @@
-import DP.정수_삼각형.Solution;
+import Greedy.큰_수_만들기.Solution;
 
 public class Main {
     public static void main(String[] args) {
-        int[][] triangle = {{7}, {3, 8}, {8, 1, 0}, {2, 7, 4, 4}, {4, 5, 2, 6, 5}};
+        String number = "4177252841";
+        int k = 4;
 
-        System.out.println(new Solution().solution(triangle));
+        System.out.println(new Solution().solution(number, k));
     }
 
     private static void print(int[][] arr) {
