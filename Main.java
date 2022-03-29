@@ -1,11 +1,10 @@
-import Greedy.큰_수_만들기.Solution;
+import 완전탐색.모의고사.Solution;
 
 public class Main {
     public static void main(String[] args) {
-        String number = "4177252841";
-        int k = 4;
+        int[] answers = {1,2,3,4,5};
 
-        System.out.println(new Solution().solution(number, k));
+        System.out.println(new Solution().solution(answers));
     }
 
     private static void print(int[][] arr) {
