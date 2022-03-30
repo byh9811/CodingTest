@@ -1,3 +1,5 @@
-out\
-.idea\
+out
+.idea
+.idea/*.xml
+*.iml
 application.yml
