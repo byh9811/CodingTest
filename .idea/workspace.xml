@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d10bd49-f59d-4c41-96d0-9b53a975a9a5" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/.gitignore" beforeDir="false" />
-    </list>
+    <list default="true" id="9d10bd49-f59d-4c41-96d0-9b53a975a9a5" name="변경" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,6 +41,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/정렬/H_Index" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -90,6 +88,7 @@
       <workItem from="1648608523842" duration="2494000" />
       <workItem from="1648611065253" duration="245000" />
       <workItem from="1648612347287" duration="222000" />
+      <workItem from="1648612595935" duration="300000" />
     </task>
     <servers />
   </component>
