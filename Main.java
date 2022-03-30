@@ -1,8 +1,8 @@
-import 완전탐색.모의고사.Solution;
+import 정렬.H_Index.Solution;
 
 public class Main {
     public static void main(String[] args) {
-        int[] answers = {1,2,3,4,5};
+        int[] answers = {3, 0, 6, 1, 5};
 
         System.out.println(new Solution().solution(answers));
     }
