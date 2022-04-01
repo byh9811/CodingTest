@@ -1,10 +1,10 @@
-import 정렬.H_Index.Solution;
+import 스택_및_큐.주식가격.Solution;
 
 public class Main {
     public static void main(String[] args) {
-        int[] answers = {3, 0, 6, 1, 5};
+        int[] answers = {1, 2, 3, 2, 3};
 
-        System.out.println(new Solution().solution(answers));
+        print(new Solution().solution(answers));
     }
 
     private static void print(int[][] arr) {
@@ -15,8 +15,8 @@ public class Main {
         }
     }
 
-    private static void print(String[] arr) {
-        for(String elem: arr) {
+    private static void print(int[] arr) {
+        for(int elem: arr) {
             System.out.print(elem + " ");
         }
     }
