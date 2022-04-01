@@ -1,10 +1,10 @@
-import 스택_및_큐.주식가격.Solution;
+import 힙.디스크_컨트롤러.Solution;
 
 public class Main {
     public static void main(String[] args) {
-        int[] answers = {1, 2, 3, 2, 3};
+        int[][] jobs = {{0, 3}, {1, 9}, {2, 6}};
 
-        print(new Solution().solution(answers));
+        System.out.println(new Solution().solution(jobs));
     }
 
     private static void print(int[][] arr) {
