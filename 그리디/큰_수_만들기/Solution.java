@@ -1,4 +1,4 @@
-package Greedy.큰_수_만들기;
+package 그리디.큰_수_만들기;
 
 public class Solution {
     public String solution(String number, int k) {

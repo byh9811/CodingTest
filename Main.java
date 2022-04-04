@@ -1,10 +1,10 @@
-import 힙.디스크_컨트롤러.Solution;
+import DFS_및_BFS.타겟_넘버.Solution;
 
 public class Main {
     public static void main(String[] args) {
-        int[][] jobs = {{0, 3}, {1, 9}, {2, 6}};
+        int[] numbers = {4, 1, 2, 1};
 
-        System.out.println(new Solution().solution(jobs));
+        System.out.println(new Solution().solution(numbers, 4));
     }
 
     private static void print(int[][] arr) {
