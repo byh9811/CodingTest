@@ -1,10 +1,10 @@
-import DFS_및_BFS.타겟_넘버.Solution;
+import 이분탐색.입국심사.Solution;
 
 public class Main {
     public static void main(String[] args) {
-        int[] numbers = {4, 1, 2, 1};
+        int[] times = {7, 10};
 
-        System.out.println(new Solution().solution(numbers, 4));
+        System.out.println(new Solution().solution(6, times));
     }
 
     private static void print(int[][] arr) {
