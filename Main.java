@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         int[][] vertex = {{3, 6}, {4, 3}, {3, 2}, {1, 3}, {1, 2}, {2, 4}, {5, 2}};
 
-        System.out.println(new Solution().solution("JAZ"));
+        System.out.println(new Solution().solution("JEROEN"));
     }
 
     private static void print(int[][] arr) {
