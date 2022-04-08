@@ -1,10 +1,10 @@
-import 그리디.조이스틱.Solution;
+import DP.등굣길.Solution;
 
 public class Main {
     public static void main(String[] args) {
-        int[][] vertex = {{3, 6}, {4, 3}, {3, 2}, {1, 3}, {1, 2}, {2, 4}, {5, 2}};
+        int[][] puddles = {{2, 2}};
 
-        System.out.println(new Solution().solution("JEROEN"));
+        System.out.println(new Solution().solution(4, 3, puddles));
     }
 
     private static void print(int[][] arr) {
