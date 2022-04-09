@@ -25,3 +25,22 @@
 
 
 4. 예측대로 출력되지 않을 경우 출력문을 이용해 디버깅한다.
+
+---------------
+
+### 자료구조 선택 Procedure
+
+1. 원소의 길이가 가변인가?
+   1. Yes: Array
+   2. No: List, Set, Map, Queue, Stack, Priority Queue
+2. 순서를 고려해야 하는가?
+   1. Yes: List, Queue, Stack, Priority Queue
+   2. No: Set, Map
+3. 페어로 저장해야 하는가?
+   1. Yes: Map
+   2. No: Set
+4. 원소를 찾는 로직이 어떤 것인가?
+   1. Index: List
+   2. FIFO: Queue
+   3. FILO: Stack
+   4. Priority: Priority Queue
