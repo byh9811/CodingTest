@@ -1,10 +1,10 @@
-import 해시.전화번호_목록.Solution;
+import DFS_및_BFS.단어_변환.Solution;
 
 public class Main {
     public static void main(String[] args) {
-        String[] puddles = {"119", "97674223", "1195524421"};
+        String[] puddles = {"hot", "dot", "dog", "lot", "log"};
 
-        System.out.println(new Solution().solution(puddles));
+        System.out.println(new Solution().solution("hit", "cog", puddles));
     }
 
     private static void print(int[][] arr) {
