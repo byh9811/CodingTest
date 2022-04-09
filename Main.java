@@ -1,10 +1,10 @@
-import DP.등굣길.Solution;
+import 해시.전화번호_목록.Solution;
 
 public class Main {
     public static void main(String[] args) {
-        int[][] puddles = {{2, 2}};
+        String[] puddles = {"119", "97674223", "1195524421"};
 
-        System.out.println(new Solution().solution(4, 3, puddles));
+        System.out.println(new Solution().solution(puddles));
     }
 
     private static void print(int[][] arr) {
