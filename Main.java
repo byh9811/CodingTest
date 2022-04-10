@@ -1,10 +1,10 @@
-import DFS_및_BFS.단어_변환.Solution;
+import 그리디.구명보트.Solution;
 
 public class Main {
     public static void main(String[] args) {
-        String[] puddles = {"hot", "dot", "dog", "lot", "log"};
+        int[] people = {240, 240, 240, 240, 240};
 
-        System.out.println(new Solution().solution("hit", "cog", puddles));
+        System.out.println(new Solution().solution(people, 240));
     }
 
     private static void print(int[][] arr) {
