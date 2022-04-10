@@ -1,10 +1,10 @@
-import 그리디.구명보트.Solution;
+import 그리디.섬_연결하기.Solution;
 
 public class Main {
     public static void main(String[] args) {
-        int[] people = {240, 240, 240, 240, 240};
+        int[][] costs = {{0, 1, 5},{1, 2, 3},{2, 3, 3},{3, 1, 2},{3, 0, 4},{2, 4, 6},{2, 4, 6}};
 
-        System.out.println(new Solution().solution(people, 240));
+        System.out.println(new Solution().solution(5, costs));
     }
 
     private static void print(int[][] arr) {
