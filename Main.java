@@ -1,10 +1,10 @@
-import 그리디.섬_연결하기.Solution;
+import 힙.이중우선순위큐.Solution;
 
 public class Main {
     public static void main(String[] args) {
-        int[][] costs = {{0, 1, 5},{1, 2, 3},{2, 3, 3},{3, 1, 2},{3, 0, 4},{2, 4, 6},{2, 4, 6}};
+        String[] operations = {"I 7","I 5","I -5","D -1"};
 
-        System.out.println(new Solution().solution(5, costs));
+        print(new Solution().solution(operations));
     }
 
     private static void print(int[][] arr) {
