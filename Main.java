@@ -1,10 +1,10 @@
-import 힙.이중우선순위큐.Solution;
+import 그리디.단속카메라.Solution;
 
 public class Main {
     public static void main(String[] args) {
-        String[] operations = {"I 7","I 5","I -5","D -1"};
+        int[][] routes = {{-20,-15}, {-14,-5}, {-18,-13}, {-5,-3}};
 
-        print(new Solution().solution(operations));
+        System.out.println(new Solution().solution(routes));
     }
 
     private static void print(int[][] arr) {
