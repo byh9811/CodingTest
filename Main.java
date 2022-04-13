@@ -1,10 +1,10 @@
-import 그리디.단속카메라.Solution;
+import DFS_및_BFS.여행경로.Solution;
 
 public class Main {
     public static void main(String[] args) {
-        int[][] routes = {{-20,-15}, {-14,-5}, {-18,-13}, {-5,-3}};
+        String[][] tickets = {{"ICN", "B"}, {"B", "ICN"}, {"ICN", "A"}, {"A", "D"}, {"D", "A"}};
 
-        System.out.println(new Solution().solution(routes));
+        print(new Solution().solution(tickets));
     }
 
     private static void print(int[][] arr) {
@@ -15,8 +15,8 @@ public class Main {
         }
     }
 
-    private static void print(int[] arr) {
-        for(int elem: arr) {
+    private static void print(String[] arr) {
+        for(String elem: arr) {
             System.out.print(elem + " ");
         }
     }
