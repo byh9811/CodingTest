@@ -1,23 +1,27 @@
-import DFS_및_BFS.여행경로.Solution;
+import DP.도둑질.Solution;
 
 public class Main {
     public static void main(String[] args) {
-        String[][] tickets = {{"ICN", "B"}, {"B", "ICN"}, {"ICN", "A"}, {"A", "D"}, {"D", "A"}};
+        int[] money = {1, 2, 3, 1};
 
-        print(new Solution().solution(tickets));
+        print(new Solution().solution(money));
     }
 
-    private static void print(int[][] arr) {
-        for(int[] elem: arr) {
-            for(int elem2: elem)
+    private static void print(Object[][] arr) {
+        for(Object[] elem: arr) {
+            for(Object elem2: elem)
                 System.out.print(elem2 + " ");
             System.out.println();
         }
     }
 
-    private static void print(String[] arr) {
-        for(String elem: arr) {
+    private static void print(Object[] arr) {
+        for(Object elem: arr) {
             System.out.print(elem + " ");
         }
+    }
+
+    private static void print(Object o) {
+        System.out.println(o);
     }
 }
