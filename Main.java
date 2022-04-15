@@ -1,10 +1,10 @@
-import DP.도둑질.Solution;
+import 이분탐색.징검다리.Solution;
 
 public class Main {
     public static void main(String[] args) {
-        int[] money = {1, 2, 3, 1};
+        int[] rocks = {2, 14, 11, 21, 17};
 
-        print(new Solution().solution(money));
+        print(new Solution().solution(25, rocks, 2));
     }
 
     private static void print(Object[][] arr) {
