@@ -1,4 +1,4 @@
-package 프로그래머스.코딩테스트_고득점_Kit.DFS_및_BFS.가장_먼_노드;
+package 그래프.가장_먼_노드;
 
 import java.util.ArrayList;
 import java.util.Arrays;

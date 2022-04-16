@@ -1,4 +1,4 @@
-package 프로그래머스.코딩테스트_고득점_Kit.DFS_및_BFS.그리디.조이스틱;
+package 그리디.조이스틱;
 
 public class Solution {
     public int solution(String name) {

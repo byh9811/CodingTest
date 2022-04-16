@@ -1,4 +1,4 @@
-package 프로그래머스.코딩테스트_고득점_Kit.DFS_및_BFS.주식가격;
+package 스택_및_큐.주식가격;
 
 import java.util.Stack;
 

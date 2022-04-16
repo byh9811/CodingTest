@@ -1,10 +1,10 @@
-import 그래프.방의_개수.Solution;
+import 해시.위장.Solution;
 
 public class Main {
     public static void main(String[] args) {
-        int[] arrows = {6, 6, 6, 4, 4, 4, 2, 2, 2, 0, 0, 0, 1, 6, 5, 5, 3, 6, 0};
+        String[][] clothes = {{"yellowhat", "headgear"}, {"bluesunglasses", "eyewear"}, {"green_turban", "headgear"}};
 
-        print(new Solution().solution(arrows));
+        print(new Solution().solution(clothes));
     }
 
     private static void print(Object[][] arr) {

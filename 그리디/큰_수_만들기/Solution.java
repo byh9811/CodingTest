@@ -1,4 +1,4 @@
-package 프로그래머스.코딩테스트_고득점_Kit.DFS_및_BFS.그리디.큰_수_만들기;
+package 그리디.큰_수_만들기;
 
 public class Solution {
     public String solution(String number, int k) {

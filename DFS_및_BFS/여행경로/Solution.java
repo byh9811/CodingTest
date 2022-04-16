@@ -1,4 +1,4 @@
-package 프로그래머스.코딩테스트_고득점_Kit.DFS_및_BFS.여행경로;
+package DFS_및_BFS.여행경로;
 
 import java.util.*;
 
