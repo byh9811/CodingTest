@@ -1,4 +1,4 @@
-package DP.정수_삼각형;
+package 프로그래머스.코딩테스트_고득점_Kit.DFS_및_BFS.DP.정수_삼각형;
 
 public class Solution {
     public int solution(int[][] triangle) {

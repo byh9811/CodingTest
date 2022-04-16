@@ -1,4 +1,4 @@
-package DFS_및_BFS.타겟_넘버;
+package 프로그래머스.코딩테스트_고득점_Kit.DFS_및_BFS.타겟_넘버;
 
 public class Solution {
     int[] numbers;

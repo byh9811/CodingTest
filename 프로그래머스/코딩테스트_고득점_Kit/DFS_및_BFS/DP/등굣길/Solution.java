@@ -1,4 +1,4 @@
-package DP.등굣길;
+package 프로그래머스.코딩테스트_고득점_Kit.DFS_및_BFS.DP.등굣길;
 
 public class Solution {
     public int solution(int m, int n, int[][] puddles) {

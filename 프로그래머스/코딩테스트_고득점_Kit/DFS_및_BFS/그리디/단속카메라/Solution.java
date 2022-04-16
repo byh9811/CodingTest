@@ -1,4 +1,4 @@
-package 그리디.단속카메라;
+package 프로그래머스.코딩테스트_고득점_Kit.DFS_및_BFS.그리디.단속카메라;
 
 import java.util.Arrays;
 import java.util.Comparator;
