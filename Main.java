@@ -1,10 +1,10 @@
-import 이분탐색.징검다리.Solution;
+import 해시.위장.Solution;
 
 public class Main {
     public static void main(String[] args) {
-        int[] rocks = {2, 14, 11, 21, 17};
+        String[][] clothes = {{"yellowhat", "headgear"}, {"bluesunglasses", "eyewear"}, {"green_turban", "headgear"}};
 
-        print(new Solution().solution(25, rocks, 2));
+        print(new Solution().solution(clothes));
     }
 
     private static void print(Object[][] arr) {
