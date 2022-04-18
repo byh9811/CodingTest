@@ -1,11 +1,10 @@
-import 프로그래머스.고득점_Kit.스택_및_큐.기능개발.Solution;
+import 프로그래머스.레벨1.없는_숫자_더하기.Solution;
 
 public class Main {
     public static void main(String[] args) {
-        int[] genres = {95, 90, 99, 99, 80, 99};
-        int[] plays = {1, 1, 1, 1, 1, 1};
+        int[] numbers = {1, 2, 3, 4, 6, 7, 8, 0};
 
-        print(new Solution().solution(genres, plays));
+        print(new Solution().solution(numbers));
     }
 
     private static void print(Object[][] arr) {
