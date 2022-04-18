@@ -1,9 +1,9 @@
-import 프로그래머스.고득점_Kit.해시.베스트앨범.Solution;
+import 프로그래머스.고득점_Kit.스택_및_큐.기능개발.Solution;
 
 public class Main {
     public static void main(String[] args) {
-        String[] genres = {"classic", "pop", "classic", "classic", "pop"};
-        int[] plays = {500, 600, 150, 800, 2500};
+        int[] genres = {95, 90, 99, 99, 80, 99};
+        int[] plays = {1, 1, 1, 1, 1, 1};
 
         print(new Solution().solution(genres, plays));
     }
