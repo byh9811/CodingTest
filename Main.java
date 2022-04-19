@@ -1,10 +1,10 @@
-import 프로그래머스.레벨1.없는_숫자_더하기.Solution;
+import 프로그래머스.고득점_Kit.스택_및_큐.프린터.Solution;
 
 public class Main {
     public static void main(String[] args) {
-        int[] numbers = {1, 2, 3, 4, 6, 7, 8, 0};
+        int[] numbers = {1, 1, 9, 1, 1, 1};
 
-        print(new Solution().solution(numbers));
+        print(new Solution().solution(numbers, 0));
     }
 
     private static void print(Object[][] arr) {
