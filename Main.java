@@ -1,10 +1,10 @@
-import 프로그래머스.고득점_Kit.스택_및_큐.프린터.Solution;
+import 프로그래머스.고득점_Kit.스택_및_큐.다리를_지나는_트럭.Solution;
 
 public class Main {
     public static void main(String[] args) {
-        int[] numbers = {1, 1, 9, 1, 1, 1};
+        int[] numbers = {1, 1, 1};
 
-        print(new Solution().solution(numbers, 0));
+        print(new Solution().solution(3, 1, numbers));
     }
 
     private static void print(Object[][] arr) {
