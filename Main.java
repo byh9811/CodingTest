@@ -1,10 +1,10 @@
-import 프로그래머스.고득점_Kit.스택_및_큐.다리를_지나는_트럭.Solution;
+import 프로그래머스.고득점_Kit.힙.더_맵게.Solution;
 
 public class Main {
     public static void main(String[] args) {
-        int[] numbers = {1, 1, 1};
+        int[] numbers = {1, 2, 3, 9, 10, 12};
 
-        print(new Solution().solution(3, 1, numbers));
+        print(new Solution().solution(numbers, 7));
     }
 
     private static void print(Object[][] arr) {
