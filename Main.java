@@ -1,4 +1,4 @@
-import 프로그래머스.레벨1.음양_더하기.Solution;
+import 프로그래머스.레벨2.단체사진_찍기.Solution;
 
 public class Main {
     public static void main(String[] args) {
@@ -8,7 +8,7 @@ public class Main {
                 {4, 5, 6}
         };
 
-        String[] str1DArr = {"a", "b", "c"};
+        String[] str1DArr = {"N~F=0", "R~T>2"};
         String[][] str2DArr = {
                 {"a", "b", "c"},
                 {"d", "e", "f"}
@@ -26,7 +26,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution(int1DArr, bool1DArr));
+        print(new Solution().solution(2, str1DArr));
     }
 
     private static void print(Object[][] arr) {
