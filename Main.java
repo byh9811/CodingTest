@@ -1,8 +1,8 @@
-import 프로그래머스.레벨2.단체사진_찍기.Solution;
+import 프로그래머스.고득점_Kit.정렬.가장_큰_수.Solution;
 
 public class Main {
     public static void main(String[] args) {
-        int[] int1DArr = {4,7,12};
+        int[] int1DArr = {3, 30, 34, 5, 9};
         int[][] int2DArr = {
                 {1, 2, 3},
                 {4, 5, 6}
@@ -26,7 +26,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution(2, str1DArr));
+        print(new Solution().solution(int1DArr));
     }
 
     private static void print(Object[][] arr) {
