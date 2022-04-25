@@ -1,11 +1,15 @@
-import 프로그래머스.고득점_Kit.정렬.가장_큰_수.Solution;
+import 프로그래머스.고득점_Kit.정렬.K번째수.Solution;
+
+import java.lang.reflect.Array;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        int[] int1DArr = {3, 30, 34, 5, 9};
+        int[] int1DArr = {1, 5, 2, 6, 3, 7, 4};
         int[][] int2DArr = {
-                {1, 2, 3},
-                {4, 5, 6}
+                {2, 5, 3},
+                {4, 4, 1},
+                {1, 7, 3}
         };
 
         String[] str1DArr = {"N~F=0", "R~T>2"};
@@ -26,7 +30,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution(int1DArr));
+        print(new Solution().solution(int1DArr, int2DArr));
     }
 
     private static void print(Object[][] arr) {
@@ -44,6 +48,27 @@ public class Main {
     }
 
     private static void print(Object o) {
-        System.out.println(o);
+        if(o.getClass().isArray()) {
+            Class<?> objClass = o.getClass();
+            Object[] tempArr;
+            if(objClass.equals(int[].class))
+                tempArr = Arrays.stream((int[])o).boxed().toArray();
+            else {
+                System.out.println("기본타입 배열 출력 오류");
+                return;
+            }
+            print(tempArr);
+        } else {
+            System.out.println(o);
+        }
     }
+
+    public static boolean isBaseTypeOrArray(boolean obj) {return true;}
+    public static boolean isBaseTypeOrArray(byte obj) {return true;}
+    public static boolean isBaseTypeOrArray(short obj) {return true;}
+    public static boolean isBaseTypeOrArray(char obj) {return true;}
+    public static boolean isBaseTypeOrArray(int obj) {return true;}
+    public static boolean isBaseTypeOrArray(long obj) {return true;}
+    public static boolean isBaseTypeOrArray(float obj) {return true;}
+    public static boolean isBaseTypeOrArray(double obj) {return true;}
 }
