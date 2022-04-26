@@ -1,4 +1,4 @@
-import 프로그래머스.고득점_Kit.정렬.K번째수.Solution;
+import 프로그래머스.고득점_Kit.완전탐색.소수_찾기.Solution;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
@@ -30,7 +30,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution(int1DArr, int2DArr));
+        print(new Solution().solution("011"));
     }
 
     private static void print(Object[][] arr) {

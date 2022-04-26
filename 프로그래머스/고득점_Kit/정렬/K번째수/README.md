@@ -33,10 +33,10 @@ https://programmers.co.kr/learn/courses/30/lessons/42748
 
 -----------
 ## 풀이
-1. commands의 크기만큼 int형 배열 answer를 생성한다.
-2. commands를 순회하며 i, j, k를 초기화한다.
-3. j-i+1만큼 int형 배열 temp를 생성한다.
-4. i부터 j까지 돌면서 temp를 초기화한다.
-5. temp를 오름차순 정렬한다.
-6. k번째 원소를 answer에 추가한다.
-7. 2번의 순회를 마치면 answer를 리턴한다.
+1. `commands`의 크기만큼 int형 배열 `answer`를 생성한다.
+2. `commands`를 순회하며 `i`, `j`, `k`를 초기화한다.
+3. `j-i+1`만큼 int형 배열 `temp`를 생성한다.
+4. `i`부터 `j`까지 돌면서 `temp`를 초기화한다.
+5. `temp`를 오름차순 정렬한다.
+6. `k`번째 원소를 `answer`에 추가한다.
+7. 2번의 순회를 마치면 `answer`를 리턴한다.
