@@ -1,6 +1,5 @@
-import 프로그래머스.고득점_Kit.완전탐색.소수_찾기.Solution;
+import 프로그래머스.고득점_Kit.완전탐색.카펫.Solution;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class Main {
@@ -30,7 +29,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution("011"));
+        print(new Solution().solution(10, 2));
     }
 
     private static void print(Object[][] arr) {
