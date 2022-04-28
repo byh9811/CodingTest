@@ -1,10 +1,11 @@
-import 프로그래머스.고득점_Kit.완전탐색.카펫.Solution;
+import 프로그래머스.고득점_Kit.그리디.체육복.Solution;
 
 import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        int[] int1DArr = {1, 5, 2, 6, 3, 7, 4};
+        int[] int1DArr = {2, 4};
+        int[] int1DArr2 = {1, 3, 5};
         int[][] int2DArr = {
                 {2, 5, 3},
                 {4, 4, 1},
@@ -29,7 +30,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution(10, 2));
+        print(new Solution().solution(5, int1DArr, int1DArr2));
     }
 
     private static void print(Object[][] arr) {
