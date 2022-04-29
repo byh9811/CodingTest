@@ -1,4 +1,4 @@
-import 프로그래머스.고득점_Kit.그리디.체육복.Solution;
+import 프로그래머스.고득점_Kit.DP.N으로_표현.Solution;
 
 import java.util.Arrays;
 
@@ -30,7 +30,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution(5, int1DArr, int1DArr2));
+        print(new Solution().solution(5, 12));
     }
 
     private static void print(Object[][] arr) {
