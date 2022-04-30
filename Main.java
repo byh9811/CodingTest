@@ -1,4 +1,4 @@
-import 프로그래머스.고득점_Kit.DP.N으로_표현.Solution;
+import 프로그래머스.고득점_Kit.DFS_및_BFS.네트워크.Solution;
 
 import java.util.Arrays;
 
@@ -7,9 +7,9 @@ public class Main {
         int[] int1DArr = {2, 4};
         int[] int1DArr2 = {1, 3, 5};
         int[][] int2DArr = {
-                {2, 5, 3},
-                {4, 4, 1},
-                {1, 7, 3}
+                {1, 1, 0},
+                {1, 1, 0},
+                {0, 0, 1}
         };
 
         String[] str1DArr = {"N~F=0", "R~T>2"};
@@ -30,7 +30,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution(5, 12));
+        print(new Solution().solution(3, int2DArr));
     }
 
     private static void print(Object[][] arr) {
