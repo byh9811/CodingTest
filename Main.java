@@ -1,11 +1,11 @@
-import 프로그래머스.레벨1.내적.Solution;
+import 프로그래머스.레벨1.소수_만들기.Solution;
 
 import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
         int[] int1DArr = {1, 2, 3, 4};
-        int[] int1DArr2 = {-3, -1, 0, 2};
+        int[] int1DArr2 = {1, 2, 7, 6, 4};
         int[][] int2DArr = {
                 {4, 3},
                 {4, 2},
@@ -32,7 +32,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution(int1DArr, int1DArr2));
+        print(new Solution().solution(int1DArr2));
     }
 
     private static void print(Object[][] arr) {
