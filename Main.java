@@ -1,4 +1,4 @@
-import 프로그래머스.레벨1.폰켓몬.Solution;
+import 프로그래머스.레벨1.약수의_개수와_덧셈.Solution;
 
 import java.util.Arrays;
 
@@ -32,7 +32,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution(int1DArr));
+        print(new Solution().solution(24, 27));
     }
 
     private static void print(Object[][] arr) {
