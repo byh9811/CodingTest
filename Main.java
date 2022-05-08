@@ -1,4 +1,4 @@
-import 프로그래머스.레벨1.약수의_개수와_덧셈.Solution;
+import 프로그래머스.레벨1.삼진법_뒤집기.Solution;
 
 import java.util.Arrays;
 
@@ -32,7 +32,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution(24, 27));
+        print(new Solution().solution(125));
     }
 
     private static void print(Object[][] arr) {
