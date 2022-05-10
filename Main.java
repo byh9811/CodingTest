@@ -1,10 +1,10 @@
-import 프로그래머스.레벨1.예산.Solution;
+import 프로그래머스.레벨1.두_개_뽑아서_더하기.Solution;
 
 import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        int[] int1DArr = {1,3,2,5,4};
+        int[] int1DArr = {2,1,3,4,1};
         int[] int1DArr2 = {1, 2, 7, 6, 4};
         int[][] int2DArr = {
                 {4, 3},
@@ -32,7 +32,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution(int1DArr, 9));
+        print(new Solution().solution(int1DArr));
     }
 
     private static void print(Object[][] arr) {
