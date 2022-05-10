@@ -1,10 +1,10 @@
-import 프로그래머스.레벨1.삼진법_뒤집기.Solution;
+import 프로그래머스.레벨1.예산.Solution;
 
 import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        int[] int1DArr = {3,3,3,2,2,2};
+        int[] int1DArr = {1,3,2,5,4};
         int[] int1DArr2 = {1, 2, 7, 6, 4};
         int[][] int2DArr = {
                 {4, 3},
@@ -32,7 +32,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution(125));
+        print(new Solution().solution(int1DArr, 9));
     }
 
     private static void print(Object[][] arr) {
