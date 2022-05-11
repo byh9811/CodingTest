@@ -1,4 +1,4 @@
-import 프로그래머스.레벨1.두_개_뽑아서_더하기.Solution;
+import 프로그래머스.레벨1.이016년.Solution;
 
 import java.util.Arrays;
 
@@ -32,7 +32,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution(int1DArr));
+        print(new Solution().solution(5, 24));
     }
 
     private static void print(Object[][] arr) {
