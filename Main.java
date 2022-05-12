@@ -1,4 +1,4 @@
-import 프로그래머스.레벨1.이016년.Solution;
+import 프로그래머스.레벨1.최소직사각형.Solution;
 
 import java.util.Arrays;
 
@@ -7,11 +7,10 @@ public class Main {
         int[] int1DArr = {2,1,3,4,1};
         int[] int1DArr2 = {1, 2, 7, 6, 4};
         int[][] int2DArr = {
-                {4, 3},
-                {4, 2},
-                {3, 2},
-                {1, 2},
-                {2, 5}
+                {60, 50},
+                {30, 70},
+                {60, 30},
+                {80, 40}
         };
 
         String[] str1DArr = {"N~F=0", "R~T>2"};
@@ -32,7 +31,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution(5, 24));
+        print(new Solution().solution(int2DArr));
     }
 
     private static void print(Object[][] arr) {
