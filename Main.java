@@ -1,4 +1,4 @@
-import 프로그래머스.레벨1.최소직사각형.Solution;
+import 프로그래머스.레벨1.나머지가_1이_되는_수_찾기.Solution;
 
 import java.util.Arrays;
 
@@ -31,7 +31,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution(int2DArr));
+        print(new Solution().solution(10));
     }
 
     private static void print(Object[][] arr) {

@@ -26,6 +26,6 @@ https://programmers.co.kr/learn/courses/30/lessons/70128
 
 -----------
 ## 풀이
-1. answer를 0으로 초기화한다.
-2. i를 순회하며 a, b를 곱하여 answer에 더한다.
-3. 순회가 끝나면 answer를 리턴한다.
+1. `answer`를 0으로 초기화한다.
+2. `i`를 순회하며 `a`, `b`를 곱하여 `answer`에 더한다.
+3. 순회가 끝나면 `answer`를 리턴한다.
