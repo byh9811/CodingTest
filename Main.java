@@ -1,4 +1,4 @@
-import 프로그래머스.레벨1.나머지가_1이_되는_수_찾기.Solution;
+import 프로그래머스.레벨1.부족한_금액_계산하기.Solution;
 
 import java.util.Arrays;
 
@@ -31,7 +31,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution(10));
+        print(new Solution().solution(3, 20, 4));
     }
 
     private static void print(Object[][] arr) {
