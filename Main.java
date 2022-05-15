@@ -1,4 +1,4 @@
-import 프로그래머스.레벨1.부족한_금액_계산하기.Solution;
+import 프로그래머스.레벨2.멀쩡한_사각형.Solution;
 
 import java.util.Arrays;
 
@@ -31,7 +31,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution(3, 20, 4));
+        print(new Solution().solution(12, 8));
     }
 
     private static void print(Object[][] arr) {
