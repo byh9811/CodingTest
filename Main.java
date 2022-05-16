@@ -1,4 +1,4 @@
-import 프로그래머스.레벨2.멀쩡한_사각형.Solution;
+import 프로그래머스.레벨2.일24_나라의_숫자.Solution;
 
 import java.util.Arrays;
 
@@ -31,7 +31,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution(12, 8));
+        print(new Solution().solution(6));
     }
 
     private static void print(Object[][] arr) {
