@@ -1,11 +1,11 @@
-import 프로그래머스.레벨1.가운데_글자_가져오기.Solution;
+import 프로그래머스.레벨1.일차_비밀지도.Solution;
 
 import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        int[] int1DArr = {2,1,3,4,1};
-        int[] int1DArr2 = {1, 2, 7, 6, 4};
+        int[] int1DArr = {9, 20, 28, 18, 11};
+        int[] int1DArr2 = {30, 1, 21, 17, 28};
         int[][] int2DArr = {
                 {60, 50},
                 {30, 70},
@@ -31,7 +31,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution("qwer"));
+        print(new Solution().solution(5, int1DArr, int1DArr2));
     }
 
     private static void print(Object[][] arr) {
