@@ -1,4 +1,4 @@
-import 프로그래머스.레벨1.일차_비밀지도.Solution;
+import 프로그래머스.레벨1.나누어_떨어지는_숫자_배열.Solution;
 
 import java.util.Arrays;
 
