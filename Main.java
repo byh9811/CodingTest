@@ -1,4 +1,4 @@
-import 프로그래머스.레벨1.나누어_떨어지는_숫자_배열.Solution;
+import 프로그래머스.레벨1.두_정수_사이의_합.Solution;
 
 import java.util.Arrays;
 
@@ -31,7 +31,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution(5, int1DArr, int1DArr2));
+        print(new Solution().solution(3, 5));
     }
 
     private static void print(Object[][] arr) {
