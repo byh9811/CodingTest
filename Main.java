@@ -1,4 +1,4 @@
-import 프로그래머스.레벨1.두_정수_사이의_합.Solution;
+import 프로그래머스.레벨1.문자열_내_마음대로_정렬하기.Solution;
 
 import java.util.Arrays;
 
@@ -13,7 +13,7 @@ public class Main {
                 {80, 40}
         };
 
-        String[] str1DArr = {"N~F=0", "R~T>2"};
+        String[] str1DArr = {"sun", "bed", "car"};
         String[][] str2DArr = {
                 {"a", "b", "c"},
                 {"d", "e", "f"}
@@ -31,7 +31,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution(3, 5));
+        print(new Solution().solution(str1DArr, 1));
     }
 
     private static void print(Object[][] arr) {
