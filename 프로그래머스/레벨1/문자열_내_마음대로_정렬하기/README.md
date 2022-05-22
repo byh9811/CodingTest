@@ -28,4 +28,6 @@ https://programmers.co.kr/learn/courses/30/lessons/12915
 
 -----------
 ## 풀이
-1. 
+1. `Arrays.sort()`를 이용하되, 두 번째 인자로 정렬 규칙을 정의해준다.
+2. 람다식을 이용해 `n`번째 글자로 비교하도록 `compare`함수를 구현하고, `n`번째 글자가 같다면 `compareTo`함수를 이용해 사전순으로 정렬하도록 구현한다.
+3. 정렬된 `strings`를 리턴한다.

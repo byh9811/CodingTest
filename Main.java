@@ -1,4 +1,4 @@
-import 프로그래머스.레벨1.문자열_내_마음대로_정렬하기.Solution;
+import 프로그래머스.레벨2.짝지어_제거하기.Solution;
 
 import java.util.Arrays;
 
@@ -31,7 +31,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution(str1DArr, 1));
+        print(new Solution().solution("aabbddb"));
     }
 
     private static void print(Object[][] arr) {
