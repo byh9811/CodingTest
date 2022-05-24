@@ -1,4 +1,4 @@
-import 프로그래머스.레벨2.짝지어_제거하기.Solution;
+import 프로그래머스.레벨2.행렬_테두리_회전하기.Solution;
 
 import java.util.Arrays;
 
@@ -7,10 +7,10 @@ public class Main {
         int[] int1DArr = {9, 20, 28, 18, 11};
         int[] int1DArr2 = {30, 1, 21, 17, 28};
         int[][] int2DArr = {
-                {60, 50},
-                {30, 70},
-                {60, 30},
-                {80, 40}
+                {1, 1, 2, 2},
+                {1, 2, 2, 3},
+                {2, 1, 3, 2},
+                {2, 2, 3, 3}
         };
 
         String[] str1DArr = {"sun", "bed", "car"};
@@ -31,7 +31,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution("aabbddb"));
+        print(new Solution().solution(3, 3, int2DArr));
     }
 
     private static void print(Object[][] arr) {
