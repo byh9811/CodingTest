@@ -1,4 +1,4 @@
-import 프로그래머스.레벨2.행렬_테두리_회전하기.Solution;
+import 프로그래머스.레벨2.뉴스_클러스터링.Solution;
 
 import java.util.Arrays;
 
@@ -31,7 +31,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution(3, 3, int2DArr));
+        print(new Solution().solution("E=M*C^2", "e=m*c^2"));
     }
 
     private static void print(Object[][] arr) {
