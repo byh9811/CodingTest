@@ -53,14 +53,17 @@ https://programmers.co.kr/learn/courses/30/lessons/17677
 
 -----------
 ## 풀이
-1. str1과 str2를 각각 두 글자로 분리한 단어들을 HashMap<String, Integer> 타입의 map1, map2에 저장한다.
+1. `str1`과 `str2`를 각각 두 글자로 분리한 단어들을 `HashMap<String, Integer>` 타입의 `map1`, `map2`에 저장한다.
    1. 저장시 공백, 숫자나 특수문자는 무시한다.
    2. 대소문자는 구분하지 않으므로 전부 대문자로 저장한다.
    3. <단어, 개수> 쌍으로 저장한다.
-2. 단어들을 각각 저장하면서 합집합 union에도 저장한다.
-3. map1과 map2를 이용해 교집합 intersection도 생성한다.
-   1. map1을 순회하면서 단어와 개수를 기록한다.
-   2. map2에 해당 단어가 몇개 있는지 확인한다.
-   3. map1과 map2 중 개수가 낮은 쪽을 intersection에 기록한다.
-4. intersection과 union을 순회하며 교집합 원소의 개수 interSize, 합집합 원소의 개수 unionSize를 계산한다.
-5. intersectionSize*65536/unionSize을 리턴한다.
+2. `map1`과 `map2`를 이용해 교집합의 크기도 계산한다.
+   1. `map1`을 순회하면서 단어와 개수를 기록한다.
+   2. 합집합을 구현한 `union`에 기록한다.
+   3. `map2`에 해당 단어가 몇개 있는지 확인하고 없으면 넘긴다.
+   4. 있으면 `map1`과 `map2` 중 개수가 낮은 만큼 `intersectionSize`에 더한다.
+3. `map2`를 순회하면서 합집합 `union`을 완성시킨다.
+   1. `map2`의 단어 개수가 `map1`의 단어 개수보다 적으면 넘긴다.
+   2. 그 외엔 `map2`의 단어 개수로 `union`을 갱신한다.
+4. `union`을 순회하며 `unionSize`를 계산한다.
+5. `unionSize`가 0이면 65536을 리턴하고, `intersectionSize*65536/unionSize`을 리턴한다.
