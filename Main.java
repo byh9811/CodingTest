@@ -1,4 +1,4 @@
-import 프로그래머스.레벨2.수식_최대화.Solution;
+import 프로그래머스.레벨1.문자열_내_p와_y의_개수.Solution;
 
 import java.util.Arrays;
 
@@ -31,7 +31,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution("50*6-3*2"));
+        print(new Solution().solution("pPoooyY"));
     }
 
     private static void print(Object[][] arr) {
