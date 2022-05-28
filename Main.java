@@ -1,4 +1,4 @@
-import 프로그래머스.레벨1.문자열_내_p와_y의_개수.Solution;
+import 프로그래머스.레벨2.영어_끝말잇기.Solution;
 
 import java.util.Arrays;
 
@@ -13,7 +13,7 @@ public class Main {
                 {2, 2, 3, 3}
         };
 
-        String[] str1DArr = {"sun", "bed", "car"};
+        String[] str1DArr = {"hello", "one", "even", "never", "now", "world", "draw"};
         String[][] str2DArr = {
                 {"a", "b", "c"},
                 {"d", "e", "f"}
@@ -31,7 +31,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution("pPoooyY"));
+        print(new Solution().solution(2, str1DArr));
     }
 
     private static void print(Object[][] arr) {
