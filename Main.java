@@ -1,4 +1,4 @@
-import 프로그래머스.레벨2.영어_끝말잇기.Solution;
+import 프로그래머스.레벨1.문자열_다루기_기본.Solution;
 
 import java.util.Arrays;
 
@@ -31,7 +31,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution(2, str1DArr));
+        print(new Solution().solution("a234"));
     }
 
     private static void print(Object[][] arr) {
