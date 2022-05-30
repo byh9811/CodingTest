@@ -1,4 +1,4 @@
-import 프로그래머스.레벨1.문자열_다루기_기본.Solution;
+import 프로그래머스.레벨2.피로도.Solution;
 
 import java.util.Arrays;
 
@@ -7,10 +7,9 @@ public class Main {
         int[] int1DArr = {9, 20, 28, 18, 11};
         int[] int1DArr2 = {30, 1, 21, 17, 28};
         int[][] int2DArr = {
-                {1, 1, 2, 2},
-                {1, 2, 2, 3},
-                {2, 1, 3, 2},
-                {2, 2, 3, 3}
+                {80, 20},
+                {50, 40},
+                {30, 10}
         };
 
         String[] str1DArr = {"hello", "one", "even", "never", "now", "world", "draw"};
@@ -31,7 +30,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution("a234"));
+        print(new Solution().solution(80, int2DArr));
     }
 
     private static void print(Object[][] arr) {
