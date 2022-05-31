@@ -1,4 +1,4 @@
-import 프로그래머스.레벨2.피로도.Solution;
+import 프로그래머스.레벨1.문자열_내림차순으로_배치하기.Solution;
 
 import java.util.Arrays;
 
@@ -30,7 +30,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution(80, int2DArr));
+        print(new Solution().solution("Zbcdefg"));
     }
 
     private static void print(Object[][] arr) {
