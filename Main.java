@@ -30,7 +30,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution("{{2}, {2,1}, {2,1,3}, {2,1,3,4}}"));
+        print(new Solution().solution("{{4,2,3},{3},{2,3,4,1},{2,3}}"));
     }
 
     private static void print(Object[][] arr) {

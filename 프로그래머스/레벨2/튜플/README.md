@@ -48,12 +48,16 @@
 -----------
 ### URL
 
-https://programmers.co.kr/learn/courses/30/lessons/12917
+https://programmers.co.kr/learn/courses/30/lessons/64065
 
 -----------
 ## 풀이
-1. `s`를 Char형 배열`charArr`로 변환한다. 
-2. 기본 타입 배열은 `Collections.reverseOrder()`를 이용한 내림차순 정렬이 불가능하기 때문에 다음을 따른다.
-   1. `charArr`을 오름차순 정렬한다.
-   2. StringBuilder `sb`를 선언하고 `charArr`를 거꾸로 순회하며 String을 만든다.
-3. `sb`를 문자열로 변환하여 리턴한다.
+1. `HashMap<Integer, ArrayList<Integer>>` `map`을 생성한다.
+2. `s`를 순회하며 `map`에 `(원소 수, 원소 정보)`를 저장한다.
+   1. 여는 괄호를 만나면 `ArrayList<Integer> arr`를 생성한다.
+   2. 닫는 괄호를 만날 때까지 원소를 읽어 `arr`에 저장한다.
+   3. `arr`의 사이즈를 계산하여 함께 `map`에 저장한다.
+3. `i`를 1부터 `map`의 크기까지 순회하면서 int형 배열 `answer`를 채운다.
+   1. `Set<Integer>` `set`을 정의하여 여러 원소 중 새로운 원소가 무엇인지 파악한다.
+   2. 새로운 원소를 찾으면 `answer`에 저장하고 `set`에 추가한다.
+4. `answer`를 리턴한다.
