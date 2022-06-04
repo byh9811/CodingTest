@@ -1,4 +1,4 @@
-import 프로그래머스.레벨1.서울에서_김서방_찾기.Solution;
+import 프로그래머스.레벨1.소수_찾기.Solution;
 
 import java.util.Arrays;
 
@@ -30,7 +30,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution(str1DArr));
+        print(new Solution().solution(5));
     }
 
     private static void print(Object[][] arr) {
