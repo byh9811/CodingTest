@@ -1,4 +1,4 @@
-import 프로그래머스.레벨1.소수_찾기.Solution;
+import 프로그래머스.레벨2.빛의_경로_사이클.Solution;
 
 import java.util.Arrays;
 
@@ -12,7 +12,7 @@ public class Main {
                 {30, 10}
         };
 
-        String[] str1DArr = {"Jane", "Kim"};
+        String[] str1DArr = {"S"};
         String[][] str2DArr = {
                 {"a", "b", "c"},
                 {"d", "e", "f"}
@@ -30,7 +30,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution(5));
+        print(new Solution().solution(str1DArr));
     }
 
     private static void print(Object[][] arr) {
