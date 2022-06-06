@@ -1,4 +1,4 @@
-import 프로그래머스.레벨2.빛의_경로_사이클.Solution;
+import 프로그래머스.레벨2.게임_맵_최단거리.Solution;
 
 import java.util.Arrays;
 
@@ -7,9 +7,11 @@ public class Main {
         int[] int1DArr = {9, 20, 28, 18, 11};
         int[] int1DArr2 = {30, 1, 21, 17, 28};
         int[][] int2DArr = {
-                {80, 20},
-                {50, 40},
-                {30, 10}
+                {1,0,1,1,1},
+                {1,0,1,0,1},
+                {1,0,1,1,1},
+                {1,1,1,0,1},
+                {0,0,0,0,1}
         };
 
         String[] str1DArr = {"S"};
@@ -30,7 +32,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution(str1DArr));
+        print(new Solution().solution(int2DArr));
     }
 
     private static void print(Object[][] arr) {
