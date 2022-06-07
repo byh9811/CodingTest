@@ -1,4 +1,4 @@
-import 프로그래머스.레벨2.게임_맵_최단거리.Solution;
+import 프로그래머스.레벨2.예상_대진표.Solution;
 
 import java.util.Arrays;
 
@@ -32,7 +32,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution(int2DArr));
+        print(new Solution().solution(8, 4, 7));
     }
 
     private static void print(Object[][] arr) {
