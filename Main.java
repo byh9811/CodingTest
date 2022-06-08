@@ -1,4 +1,4 @@
-import 프로그래머스.레벨2.예상_대진표.Solution;
+import 프로그래머스.레벨2.후보키.Solution;
 
 import java.util.Arrays;
 
@@ -16,8 +16,12 @@ public class Main {
 
         String[] str1DArr = {"S"};
         String[][] str2DArr = {
-                {"a", "b", "c"},
-                {"d", "e", "f"}
+                {"100","ryan","music","2"},
+                {"200","apeach","math","2"},
+                {"300","tube","computer","3"},
+                {"400","con","computer","4"},
+                {"500","muzi","music","3"},
+                {"600","apeach","music","2"}
         };
 
         boolean[] bool1DArr = {true,false,true};
@@ -32,7 +36,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution(8, 4, 7));
+        print(new Solution().solution(str2DArr));
     }
 
     private static void print(Object[][] arr) {
