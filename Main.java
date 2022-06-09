@@ -1,4 +1,4 @@
-import 프로그래머스.레벨2.후보키.Solution;
+import 프로그래머스.레벨2.괄호_회전하기.Solution;
 
 import java.util.Arrays;
 
@@ -36,7 +36,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution(str2DArr));
+        print(new Solution().solution("}}}"));
     }
 
     private static void print(Object[][] arr) {
