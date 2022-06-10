@@ -1,4 +1,4 @@
-import 프로그래머스.레벨2.괄호_회전하기.Solution;
+import 프로그래머스.레벨2.배달.Solution;
 
 import java.util.Arrays;
 
@@ -7,11 +7,12 @@ public class Main {
         int[] int1DArr = {9, 20, 28, 18, 11};
         int[] int1DArr2 = {30, 1, 21, 17, 28};
         int[][] int2DArr = {
-                {1,0,1,1,1},
-                {1,0,1,0,1},
-                {1,0,1,1,1},
-                {1,1,1,0,1},
-                {0,0,0,0,1}
+                {1,2,1},
+                {2,3,3},
+                {5,2,2},
+                {1,4,2},
+                {5,3,1},
+                {5,4,2}
         };
 
         String[] str1DArr = {"S"};
@@ -36,7 +37,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution("}}}"));
+        print(new Solution().solution(5, int2DArr, 3));
     }
 
     private static void print(Object[][] arr) {
