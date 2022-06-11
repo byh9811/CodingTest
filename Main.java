@@ -1,4 +1,4 @@
-import 프로그래머스.레벨2.배달.Solution;
+import 프로그래머스.레벨2.nX2_타일링.Solution;
 
 import java.util.Arrays;
 
@@ -37,7 +37,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution(5, int2DArr, 3));
+        print(new Solution().solution(4));
     }
 
     private static void print(Object[][] arr) {
