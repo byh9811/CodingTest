@@ -1,4 +1,4 @@
-import 프로그래머스.레벨2.nX2_타일링.Solution;
+import 프로그래머스.레벨2.삼각_달팽이.Solution;
 
 import java.util.Arrays;
 
