@@ -37,7 +37,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution(4));
+        print(new Solution().solution(6));
     }
 
     private static void print(Object[][] arr) {

@@ -8,12 +8,12 @@ public class Solution {
         for(int i=0; i<n; i++)
             arr[i] = new int[i+1];
 
-        while(left(0, n, arr) || bottom() || right()) {}
+        int lotate = 0;
+        while(left(lotate, n, arr) && bottom(lotate, n, arr) && right(lotate, n, arr)) {
+            lotate++;
+        }
 
-        int num = 0;
-        for(int i=1; i<=n; i++)
-            num += i;
-        int[] answer = new int[num];
+        int[] answer = new int[cnt-1];
 
         int idx = 0;
         for(int[] elem1: arr) {
@@ -25,12 +25,36 @@ public class Solution {
     }
 
     private boolean left(int idx, int n, int[][] arr) {
-        if(arr[idx*2][idx]!=0)
-            return false;
+        boolean changed = false;
 
-        for(int col=idx*2; col<n-idx; col++)
+        for(int col=idx*2; col<n-idx; col++) {
             arr[col][idx] = cnt++;
+            changed = true;
+        }
 
-        return true;
+        return changed;
     }
+
+    private boolean bottom(int idx, int n, int[][] arr) {
+        boolean changed = false;
+
+        for(int row=idx+1, col=n-idx-1; row<=col-idx; row++) {
+            arr[col][row] = cnt++;
+            changed = true;
+        }
+
+        return changed;
+    }
+
+    private boolean right(int idx, int n, int[][] arr) {
+        boolean changed = false;
+
+        for(int col=n-idx-2, row=col-idx; col>idx*2; col--, row--) {
+            arr[col][row] = cnt++;
+            changed = true;
+        }
+
+        return changed;
+    }
+
 }
