@@ -1,4 +1,4 @@
-import 프로그래머스.레벨2.삼각_달팽이.Solution;
+import 프로그래머스.레벨2.프렌즈4블록.Solution;
 
 import java.util.Arrays;
 
@@ -15,7 +15,7 @@ public class Main {
                 {5,4,2}
         };
 
-        String[] str1DArr = {"S"};
+        String[] str1DArr = {"CCBDE", "AAADE", "AAABF", "CCBBF"};
         String[][] str2DArr = {
                 {"100","ryan","music","2"},
                 {"200","apeach","math","2"},
@@ -37,7 +37,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution(6));
+        print(new Solution().solution(4, 5, str1DArr));
     }
 
     private static void print(Object[][] arr) {
