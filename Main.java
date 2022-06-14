@@ -1,4 +1,4 @@
-import 프로그래머스.레벨2.프렌즈4블록.Solution;
+import 프로그래머스.레벨1.수박수박수박수박수박수.Solution;
 
 import java.util.Arrays;
 
@@ -37,7 +37,7 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution(6, 6, str1DArr));
+        print(new Solution().solution(3));
     }
 
     private static void print(Object[][] arr) {
