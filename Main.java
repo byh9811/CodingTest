@@ -1,4 +1,4 @@
-import 프로그래머스.레벨1.수박수박수박수박수박수.Solution;
+import 프로그래머스.레벨2.두개_이하로_다른_비트.Solution;
 
 import java.util.Arrays;
 
@@ -37,7 +37,9 @@ public class Main {
                 {'a', 'a', 'a'}
         };
 
-        print(new Solution().solution(3));
+        long[] long1DArr = {2,7};
+
+        print(new Solution().solution(long1DArr));
     }
 
     private static void print(Object[][] arr) {
