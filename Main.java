@@ -1,4 +1,4 @@
-import 프로그래머스.레벨2.가장_큰_정사각형_찾기.Solution;
+import 프로그래머스.레벨2.교점에_별_만들기.Solution;
 
 import java.util.Arrays;
 
@@ -7,10 +7,11 @@ public class Main {
         int[] int1DArr = {9, 20, 28, 18, 11};
         int[] int1DArr2 = {30, 1, 21, 17, 28};
         int[][] int2DArr = {
-                {0,1,1,1},
-                {1,1,1,1},
-                {1,1,1,1},
-                {0,0,1,0}
+                {2, -1, 4},
+                {-2, -1, 4},
+                {0, -1, 1},
+                {5, -8, -12},
+                {5, 8, 12}
         };
 
         String[] str1DArr = {"TTTANT", "RRFACC", "RRRFCC", "TRRRAA", "TTMMMF", "TMMTTJ"};
