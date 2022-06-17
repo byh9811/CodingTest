@@ -56,7 +56,7 @@ public class Solution {
         long aedb = a*e - b*d;
         long cdaf = c*d - a*f;
 
-        if(bfce%aedb!=0 || cdaf%aedb!=0)
+        if(aedb==0 || bfce%aedb!=0 || cdaf%aedb!=0)
             return;
 
         long x = bfce / aedb;
