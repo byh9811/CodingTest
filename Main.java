@@ -1,4 +1,4 @@
-import 프로그래머스.레벨2.교점에_별_만들기.Solution;
+import 프로그래머스.레벨2.전력망을_둘로_나누기.Solution;
 
 import java.util.Arrays;
 
@@ -7,11 +7,14 @@ public class Main {
         int[] int1DArr = {9, 20, 28, 18, 11};
         int[] int1DArr2 = {30, 1, 21, 17, 28};
         int[][] int2DArr = {
-                {2, -1, 4},
-                {-2, -1, 4},
-                {0, -1, 1},
-                {5, -8, -12},
-                {5, 8, 12}
+                {1,3},
+                {2,3},
+                {3,4},
+                {4,5},
+                {4,6},
+                {4,7},
+                {7,8},
+                {7,9}
         };
 
         String[] str1DArr = {"TTTANT", "RRFACC", "RRRFCC", "TRRRAA", "TTMMMF", "TMMTTJ"};
@@ -38,7 +41,7 @@ public class Main {
 
         long[] long1DArr = {2,7};
 
-        print(new Solution().solution(int2DArr));
+        print(new Solution().solution(9, int2DArr));
     }
 
     private static void print(Object[][] arr) {
