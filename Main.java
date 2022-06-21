@@ -1,4 +1,4 @@
-import 프로그래머스.레벨2.캐시.Solution;
+import 프로그래머스.레벨2.이진_변환_반복하기.Solution;
 
 import java.util.Arrays;
 
@@ -41,7 +41,7 @@ public class Main {
 
         long[] long1DArr = {2,7};
 
-        print(new Solution().solution(3, str1DArr));
+        print(new Solution().solution("1111111"));
     }
 
     private static void print(Object[][] arr) {
