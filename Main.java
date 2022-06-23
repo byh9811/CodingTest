@@ -1,4 +1,4 @@
-import 프로그래머스.레벨2.점프와_순간_이동.Solution;
+import 프로그래머스.레벨2.nX3_타일링.Solution;
 
 import java.util.Arrays;
 
@@ -41,7 +41,7 @@ public class Main {
 
         long[] long1DArr = {2,7};
 
-        print(new Solution().solution(5000));
+        print(new Solution().solution(8));
     }
 
     private static void print(Object[][] arr) {
