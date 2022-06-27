@@ -1,4 +1,4 @@
-import 프로그래머스.레벨2.쿼드압축_후_개수_세기.Solution;
+import 프로그래머스.레벨2.스킬트리.Solution;
 
 import java.util.Arrays;
 
@@ -13,7 +13,7 @@ public class Main {
                 {1,1,1,1}
         };
 
-        String[] str1DArr = {"Jeju", "Pangyo", "Seoul", "NewYork", "LA"};
+        String[] str1DArr = {"CB", "CXYB", "BD", "AECD", "ABC", "AEX", "CDB", "CBKD", "IJCB", "LMDK"};
         String[][] str2DArr = {
                 {"100","ryan","music","2"},
                 {"200","apeach","math","2"},
@@ -37,7 +37,7 @@ public class Main {
 
         long[] long1DArr = {2,7};
 
-        print(new Solution().solution(int2DArr));
+        print(new Solution().solution("CBDK", str1DArr));
     }
 
     private static void print(Object[][] arr) {
