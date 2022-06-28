@@ -1,4 +1,4 @@
-import 프로그래머스.레벨2.스킬트리.Solution;
+import 프로그래머스.레벨1.시저_암호.Solution;
 
 import java.util.Arrays;
 
@@ -37,7 +37,7 @@ public class Main {
 
         long[] long1DArr = {2,7};
 
-        print(new Solution().solution("CBDK", str1DArr));
+        print(new Solution().solution("AB", 1));
     }
 
     private static void print(Object[][] arr) {
