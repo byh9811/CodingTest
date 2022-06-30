@@ -1,4 +1,4 @@
-import 프로그래머스.레벨2.방문_길이.Solution;
+import 프로그래머스.레벨2.방금그곡.Solution;
 
 import java.util.Arrays;
 
@@ -13,7 +13,7 @@ public class Main {
                 {1,1,1,1}
         };
 
-        String[] str1DArr = {"CB", "CXYB", "BD", "AECD", "ABC", "AEX", "CDB", "CBKD", "IJCB", "LMDK"};
+        String[] str1DArr = {"03:00,03:30,FOO,CC#B", "04:00,04:08,BAR,CC#BCC#BCC#B"};
         String[][] str2DArr = {
                 {"100","ryan","music","2"},
                 {"200","apeach","math","2"},
@@ -37,7 +37,7 @@ public class Main {
 
         long[] long1DArr = {2,7};
 
-        print(new Solution().solution("LULLLLLLU"));
+        print(new Solution().solution("CC#BCC#BCC#BCC#B", str1DArr));
     }
 
     private static void print(Object[][] arr) {
