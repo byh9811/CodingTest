@@ -1,4 +1,4 @@
-import 프로그래머스.레벨2.올바른_괄호.Solution;
+import 프로그래머스.레벨2.압축.Solution;
 
 import java.util.Arrays;
 
@@ -37,7 +37,7 @@ public class Main {
 
         long[] long1DArr = {2,7};
 
-        print(new Solution().solution("(())()"));
+        print(new Solution().solution("KAKAO"));
     }
 
     private static void print(Object[][] arr) {
