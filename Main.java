@@ -1,4 +1,4 @@
-import 프로그래머스.레벨2.n진수_게임.Solution;
+import 프로그래머스.레벨2.다음_큰_숫자.Solution;
 
 import java.util.Arrays;
 
@@ -37,7 +37,7 @@ public class Main {
 
         long[] long1DArr = {2,7};
 
-        print(new Solution().solution(2, 4, 2, 1));
+        print(new Solution().solution(15));
     }
 
     private static void print(Object[][] arr) {
