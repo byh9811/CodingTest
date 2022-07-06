@@ -1,4 +1,4 @@
-import 프로그래머스.레벨2.다음_큰_숫자.Solution;
+import 프로그래머스.레벨2.땅따먹기.Solution;
 
 import java.util.Arrays;
 
@@ -7,10 +7,9 @@ public class Main {
         int[] int1DArr = {9, 20, 28, 18, 11};
         int[] int1DArr2 = {30, 1, 21, 17, 28};
         int[][] int2DArr = {
-                {1,1,0,0},
-                {1,0,0,0},
-                {1,0,0,1},
-                {1,1,1,1}
+                {1,2,3,5},
+                {5,6,7,8},
+                {4,3,2,1}
         };
 
         String[] str1DArr = {"img12.png", "img10.png", "img02.png", "img1.png", "IMG01.GIF", "img2.JPG"};
@@ -37,7 +36,7 @@ public class Main {
 
         long[] long1DArr = {2,7};
 
-        print(new Solution().solution(15));
+        print(new Solution().solution(int2DArr));
     }
 
     private static void print(Object[][] arr) {
