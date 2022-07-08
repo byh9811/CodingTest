@@ -1,4 +1,4 @@
-import 프로그래머스.레벨1.약수의_합.Solution;
+import 프로그래머스.레벨1.이상한_문자_만들기.Solution;
 
 import java.util.Arrays;
 
@@ -36,7 +36,7 @@ public class Main {
 
         long[] long1DArr = {2,7};
 
-        print(new Solution().solution(25));
+        print(new Solution().solution("  abc  abc abc "));
     }
 
     private static void print(Object[][] arr) {
