@@ -1,4 +1,4 @@
-import 프로그래머스.레벨2.k진수에서_소수_개수_구하기.Solution;
+import 프로그래머스.레벨2.숫자_블록.Solution;
 
 import java.util.Arrays;
 
@@ -36,7 +36,7 @@ public class Main {
 
         long[] long1DArr = {2,7};
 
-        print(new Solution().solution(110011, 10));
+        print(new Solution().solution(1, 10));
     }
 
     private static void print(Object[][] arr) {
