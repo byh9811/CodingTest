@@ -1,4 +1,4 @@
-import 프로그래머스.레벨2.숫자_블록.Solution;
+import 프로그래머스.레벨2.숫자의_표현.Solution;
 
 import java.util.Arrays;
 
@@ -36,7 +36,7 @@ public class Main {
 
         long[] long1DArr = {2,7};
 
-        print(new Solution().solution(1, 10));
+        print(new Solution().solution(15));
     }
 
     private static void print(Object[][] arr) {
