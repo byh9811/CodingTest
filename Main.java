@@ -1,4 +1,4 @@
-import 프로그래머스.레벨2.주차_요금_계산.Solution;
+import 프로그래머스.레벨2.최댓값과_최솟값.Solution;
 
 import java.util.Arrays;
 
@@ -36,7 +36,7 @@ public class Main {
 
         long[] long1DArr = {2,7};
 
-        print(new Solution().solution(int1DArr, str1DArr));
+        print(new Solution().solution("1 2 3 4"));
     }
 
     private static void print(Object[][] arr) {
