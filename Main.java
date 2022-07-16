@@ -1,11 +1,11 @@
-import 프로그래머스.레벨2.최댓값과_최솟값.Solution;
+import 프로그래머스.레벨2.최솟값_만들기.Solution;
 
 import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        int[] int1DArr = {180, 5000, 10, 600};
-        int[] int1DArr2 = {30, 1, 21, 17, 28};
+        int[] int1DArr = {1, 2};
+        int[] int1DArr2 = {3, 4};
         int[][] int2DArr = {
                 {1,2,3,5},
                 {5,6,7,8},
@@ -36,7 +36,7 @@ public class Main {
 
         long[] long1DArr = {2,7};
 
-        print(new Solution().solution("1 2 3 4"));
+        print(new Solution().solution(int1DArr, int1DArr2));
     }
 
     private static void print(Object[][] arr) {
