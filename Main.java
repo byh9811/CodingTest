@@ -1,4 +1,4 @@
-import 프로그래머스.레벨2.최솟값_만들기.Solution;
+import 프로그래머스.레벨2.피보나치_수.Solution;
 
 import java.util.Arrays;
 
@@ -36,7 +36,7 @@ public class Main {
 
         long[] long1DArr = {2,7};
 
-        print(new Solution().solution(int1DArr, int1DArr2));
+        print(new Solution().solution(3));
     }
 
     private static void print(Object[][] arr) {
