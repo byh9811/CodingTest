@@ -1,6 +1,8 @@
-import 프로그래머스.레벨2.피보나치_수.Solution;
+import 프로그래머스.레벨2.하노이의_탑.Solution;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
@@ -36,36 +38,20 @@ public class Main {
 
         long[] long1DArr = {2,7};
 
-        print(new Solution().solution(3));
+        print(new Solution().solution(2));
     }
 
-    private static void print(Object[][] arr) {
-        for(Object[] elem: arr) {
-            for(Object elem2: elem)
-                System.out.print(elem2 + " ");
-            System.out.println();
-        }
+    private static void print(Iterable<?> iterableObj) {
+        for(Object obj: iterableObj)
+            System.out.print(obj + " ");
     }
 
-    private static void print(Object[] arr) {
-        for(Object elem: arr) {
-            System.out.print(elem + " ");
-        }
-    }
-
-    private static void print(Object o) {
-        if(o.getClass().isArray()) {
-            Class<?> objClass = o.getClass();
-            Object[] tempArr;
-            if(objClass.equals(int[].class))
-                tempArr = Arrays.stream((int[])o).boxed().toArray();
-            else {
-                System.out.println("기본타입 배열 출력 오류");
-                return;
-            }
-            print(tempArr);
+    private static void print(Object obj) {
+        Class<?> objClass = obj.getClass();
+        if(objClass.isArray()) {
+            print(Arrays.stream((Object[])obj).collect(Collectors.toList()));
         } else {
-            System.out.println(o);
+            System.out.print(obj);
         }
     }
 
