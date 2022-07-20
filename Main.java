@@ -1,4 +1,4 @@
-import 프로그래머스.레벨2.하노이의_탑.Solution;
+import 프로그래머스.레벨2.JadenCase_문자열_만들기.Solution;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -38,7 +38,7 @@ public class Main {
 
         long[] long1DArr = {2,7};
 
-        print(new Solution().solution(2));
+        print(new Solution().solution("for the last week"));
     }
 
     private static void print(Iterable<?> iterableObj) {
