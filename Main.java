@@ -1,12 +1,11 @@
-import 프로그래머스.레벨2.N_Queen.Solution;
+import 프로그래머스.레벨2.N개의_최소공배수.Solution;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-        int[] int1DArr = {1, 2};
+        int[] int1DArr = {2, 6, 8, 14};
         int[] int1DArr2 = {3, 4};
         int[][] int2DArr = {
                 {1,2,3,5},
@@ -38,7 +37,7 @@ public class Main {
 
         long[] long1DArr = {2,7};
 
-        print(new Solution().solution(4));
+        print(new Solution().solution(int1DArr));
     }
 
     private static void print(Iterable<?> iterableObj) {
