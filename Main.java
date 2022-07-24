@@ -1,7 +1,6 @@
-import 프로그래머스.레벨1.자연수_뒤집어_배열로_만들기.Solution;
+import 프로그래머스.레벨1.정수_내림차순으로_배치하기.Solution;
 
 import java.util.Arrays;
-import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
@@ -37,7 +36,7 @@ public class Main {
 
         long[] long1DArr = {2,7};
 
-        print(new Solution().solution(12345));
+        print(new Solution().solution(118372));
     }
 
     private static void print(Iterable<?> iterableObj) {
