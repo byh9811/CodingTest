@@ -1,4 +1,4 @@
-import 프로그래머스.레벨1.자릿수_더하기.Solution;
+import 프로그래머스.레벨1.자연수_뒤집어_배열로_만들기.Solution;
 
 import java.util.Arrays;
 import java.util.stream.Collectors;
@@ -37,7 +37,7 @@ public class Main {
 
         long[] long1DArr = {2,7};
 
-        print(new Solution().solution(123));
+        print(new Solution().solution(12345));
     }
 
     private static void print(Iterable<?> iterableObj) {
@@ -45,21 +45,27 @@ public class Main {
             System.out.print(obj + " ");
     }
 
-    private static void print(Object obj) {
-        Class<?> objClass = obj.getClass();
-        if(objClass.isArray()) {
-            print(Arrays.stream((Object[])obj).collect(Collectors.toList()));
-        } else {
-            System.out.print(obj);
-        }
-    }
+    private static void print(int answer) { System.out.println(answer); }
+    private static void print(long answer) { System.out.println(answer); }
+    private static void print(float answer) { System.out.println(answer); }
+    private static void print(double answer) { System.out.println(answer); }
+    private static void print(char answer) { System.out.println(answer); }
+    private static void print(String answer) { System.out.println(answer); }
+    private static void print(boolean answer) { System.out.println(answer); }
 
-    public static boolean isBaseTypeOrArray(boolean obj) {return true;}
-    public static boolean isBaseTypeOrArray(byte obj) {return true;}
-    public static boolean isBaseTypeOrArray(short obj) {return true;}
-    public static boolean isBaseTypeOrArray(char obj) {return true;}
-    public static boolean isBaseTypeOrArray(int obj) {return true;}
-    public static boolean isBaseTypeOrArray(long obj) {return true;}
-    public static boolean isBaseTypeOrArray(float obj) {return true;}
-    public static boolean isBaseTypeOrArray(double obj) {return true;}
+    private static void print(int[] answer) { System.out.println(Arrays.toString(answer)); }
+    private static void print(long[] answer) { System.out.println(Arrays.toString(answer)); }
+    private static void print(float[] answer) { System.out.println(Arrays.toString(answer)); }
+    private static void print(double[] answer) { System.out.println(Arrays.toString(answer)); }
+    private static void print(char[] answer) { System.out.println(Arrays.toString(answer)); }
+    private static void print(String[] answer) { System.out.println(Arrays.toString(answer)); }
+    private static void print(boolean[] answer) { System.out.println(Arrays.toString(answer)); }
+
+    private static void print(int[][] answer) { System.out.println(Arrays.deepToString(answer)); }
+    private static void print(long[][] answer) { System.out.println(Arrays.deepToString(answer)); }
+    private static void print(float[][] answer) { System.out.println(Arrays.deepToString(answer)); }
+    private static void print(double[][] answer) { System.out.println(Arrays.deepToString(answer)); }
+    private static void print(char[][] answer) { System.out.println(Arrays.deepToString(answer)); }
+    private static void print(String[][] answer) { System.out.println(Arrays.deepToString(answer)); }
+    private static void print(boolean[][] answer) { System.out.println(Arrays.deepToString(answer)); }
 }
