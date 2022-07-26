@@ -1,4 +1,4 @@
-import 프로그래머스.레벨1.정수_내림차순으로_배치하기.Solution;
+import 프로그래머스.레벨1.정수_제곱근_판별.Solution;
 
 import java.util.Arrays;
 
@@ -36,7 +36,7 @@ public class Main {
 
         long[] long1DArr = {2,7};
 
-        print(new Solution().solution(118372));
+        print(new Solution().solution(100000000));
     }
 
     private static void print(Iterable<?> iterableObj) {
