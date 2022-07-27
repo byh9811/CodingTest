@@ -1,4 +1,4 @@
-import 프로그래머스.레벨1.제일_작은_수_제거하기.Solution;
+import 프로그래머스.레벨1.짝수와_홀수.Solution;
 
 import java.util.Arrays;
 
@@ -36,7 +36,7 @@ public class Main {
 
         long[] long1DArr = {2,7};
 
-        print(new Solution().solution(int1DArr));
+        print(new Solution().solution(4));
     }
 
     private static void print(Iterable<?> iterableObj) {
