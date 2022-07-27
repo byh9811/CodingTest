@@ -1,10 +1,10 @@
-import 프로그래머스.레벨1.정수_제곱근_판별.Solution;
+import 프로그래머스.레벨1.제일_작은_수_제거하기.Solution;
 
 import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        int[] int1DArr = {2, 6, 8, 14};
+        int[] int1DArr = {4,3,2,1};
         int[] int1DArr2 = {3, 4};
         int[][] int2DArr = {
                 {1,2,3,5},
@@ -36,7 +36,7 @@ public class Main {
 
         long[] long1DArr = {2,7};
 
-        print(new Solution().solution(100000000));
+        print(new Solution().solution(int1DArr));
     }
 
     private static void print(Iterable<?> iterableObj) {
