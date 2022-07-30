@@ -1,4 +1,4 @@
-import 프로그래머스.레벨1.최대공약수와_최소공배수.Solution;
+import 프로그래머스.레벨1.콜라츠_추측.Solution;
 
 import java.util.Arrays;
 
@@ -36,7 +36,7 @@ public class Main {
 
         long[] long1DArr = {2,7};
 
-        print(new Solution().solution(3, 12));
+        print(new Solution().solution(626331));
     }
 
     private static void print(Iterable<?> iterableObj) {
