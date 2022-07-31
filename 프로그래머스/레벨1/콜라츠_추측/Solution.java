@@ -12,7 +12,7 @@ public class Solution {
                 n /= 2;
             answer++;
         }
-        
+
         return answer==500 ? -1 : answer;
     }
 }
