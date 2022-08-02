@@ -1,4 +1,4 @@
-import 프로그래머스.레벨1.하샤드_수.Solution;
+import 프로그래머스.레벨1.핸드폰_번호_가리기.Solution;
 
 import java.util.Arrays;
 
@@ -36,7 +36,7 @@ public class Main {
 
         long[] long1DArr = {2,7};
 
-        print(new Solution().solution(10));
+        print(new Solution().solution("01033334444"));
     }
 
     private static void print(Iterable<?> iterableObj) {
