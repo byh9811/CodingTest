@@ -1,4 +1,4 @@
-import 프로그래머스.레벨1.핸드폰_번호_가리기.Solution;
+import 프로그래머스.레벨1.행렬의_덧셈.Solution;
 
 import java.util.Arrays;
 
@@ -7,9 +7,12 @@ public class Main {
         int[] int1DArr = {4,3,2,1};
         int[] int1DArr2 = {3, 4};
         int[][] int2DArr = {
-                {1,2,3,5},
-                {5,6,7,8},
-                {4,3,2,1}
+                {1,2},
+                {5,6}
+        };
+        int[][] int2DArr2 = {
+                {3,4},
+                {5,6}
         };
 
         String[] str1DArr = {"05:34 5961 IN", "06:00 0000 IN", "06:34 0000 OUT", "07:59 5961 OUT", "07:59 0148 IN", "18:59 0000 IN", "19:09 0148 OUT", "22:59 5961 IN", "23:00 5961 OUT"};
@@ -36,7 +39,7 @@ public class Main {
 
         long[] long1DArr = {2,7};
 
-        print(new Solution().solution("01033334444"));
+        print(new Solution().solution(int2DArr, int2DArr2));
     }
 
     private static void print(Iterable<?> iterableObj) {
