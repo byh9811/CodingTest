@@ -8,7 +8,7 @@ public class Main {
         int[] int1DArr2 = {3, 4};
         int[][] int2DArr = {
                 {1,2},
-                {5,6}
+                {2,3}
         };
         int[][] int2DArr2 = {
                 {3,4},

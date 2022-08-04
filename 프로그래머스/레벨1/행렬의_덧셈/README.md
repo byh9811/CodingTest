@@ -12,17 +12,18 @@
 -----------
 ### 입출력 예
 
-| phone_number  | return        |
-|---------------|---------------|
-| "01033334444" | "*******4444" |
-| "027778888"   | "*****8888"   |
+| arr1           | arr2          | return        |
+|----------------|---------------|---------------|
+| [[1,2],[2,3]]  | [[3,4],[5,6]] | [[4,6],[7,9]] |
+| [[1],[2]]      | [[3],[4]]     | [[4],[6]]     |
 
 -----------
 ### URL
 
-https://school.programmers.co.kr/learn/courses/30/lessons/12948
+https://school.programmers.co.kr/learn/courses/30/lessons/12950
 
 -----------
 ## 풀이
-1. `phone_number의 길이-4`만큼 `StringBuilder`에 `*`을 추가한다.
-2. `StringBuilder`에 `phone_number`의 뒤 4자리를 붙여 리턴한다.
+1. `arr1`과 크기가 같은 `answer` 배열을 생성한다.
+2. 모든 원소를 순회하며 `arr1`과 `arr2`를 더하여 `answer`에 저장한다.
+3. `answer`를 리턴한다.
