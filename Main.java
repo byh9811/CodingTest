@@ -1,10 +1,10 @@
-import 프로그래머스.레벨1.x만큼_간격이_있는_n개의_숫자.Solution;
+import 실전용.Solution;
 
 import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        int[] int1DArr = {4,3,2,1};
+        int[] int1DArr = {1,2,2,3,4,1};
         int[] int1DArr2 = {3, 4};
         int[][] int2DArr = {
                 {1,2},
@@ -39,7 +39,7 @@ public class Main {
 
         long[] long1DArr = {2,7};
 
-        print(new Solution().solution(2, 5));
+        print(new Solution().solution(2, true, int1DArr));
     }
 
     private static void print(Iterable<?> iterableObj) {
