@@ -1,4 +1,4 @@
-import 프로그래머스.레벨1.행렬의_덧셈.Solution;
+import 프로그래머스.레벨1.x만큼_간격이_있는_n개의_숫자.Solution;
 
 import java.util.Arrays;
 
@@ -39,7 +39,7 @@ public class Main {
 
         long[] long1DArr = {2,7};
 
-        print(new Solution().solution(int2DArr, int2DArr2));
+        print(new Solution().solution(2, 5));
     }
 
     private static void print(Iterable<?> iterableObj) {
