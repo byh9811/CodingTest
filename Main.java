@@ -8,7 +8,7 @@ public class Main {
         int[] int1DArr2 = {3, 4};
         int[][] int2DArr = {
                 {1,2},
-                {2,3}
+                {3,4}
         };
         int[][] int2DArr2 = {
                 {3,4},
@@ -38,8 +38,12 @@ public class Main {
         };
 
         long[] long1DArr = {2,7};
+        long[][] long2DArr = {
+                {1,2},
+                {3,4}
+        };
 
-        print(new Solution().solution(2, true, int1DArr));
+        print(new Solution().solution(long2DArr));
     }
 
     private static void print(Iterable<?> iterableObj) {

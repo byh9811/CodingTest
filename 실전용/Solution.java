@@ -1,39 +1,18 @@
 package 실전용;
 
+
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 
 public class Solution {
-    public int[][] solution(int servers, boolean sticky, int[] requests) {
-        ArrayList<Integer>[] answer = new ArrayList[servers];
-        HashMap<Integer, Integer> map = new HashMap<>();
+    public int solution(int[] tasks) {
+        HashMap<Integer, Integer> nums = new HashMap<>();
 
-        for(int i=0; i<servers; i++)
-            answer[i] = new ArrayList<>();
-
-        int next = 0;
-        for(int i=0; i<requests.length; i++) {
-            int request = requests[i];
-            if(sticky) {
-                if(map.containsKey(request)) {
-                    int cur = map.get(request);
-                    answer[cur].add(request);
-                    next = (cur+1) % servers;
-                } else {
-                    answer[next].add(request);
-                    map.put(request, next);
-                    next = (next+1) % servers;
-                }
-            } else {
-                answer[next].add(request);
-                next = (next+1) % servers;
-            }
+        for(int task: tasks) {
+            nums.put(task, nums.get(task)+1);
         }
 
-        int[][] ret = new int[servers][];
-        for(int i=0; i<servers; i++)
-            ret[i] = answer[i].stream().mapToInt(x -> x).toArray();
-
-        return ret;
+        return -1;
     }
 }
