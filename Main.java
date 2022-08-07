@@ -1,10 +1,10 @@
-import 실전용.Solution;
+import 프로그래머스.레벨2.양궁대회.Solution;
 
 import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        int[] int1DArr = {1,2,2,3,4,1};
+        int[] int1DArr = {2,1,1,1,0,0,0,0,0,0,0};
         int[] int1DArr2 = {3, 4};
         int[][] int2DArr = {
                 {1,2},
@@ -43,7 +43,7 @@ public class Main {
                 {3,4}
         };
 
-        print(new Solution().solution(long2DArr));
+        print(new Solution().solution(5, int1DArr));
     }
 
     private static void print(Iterable<?> iterableObj) {
