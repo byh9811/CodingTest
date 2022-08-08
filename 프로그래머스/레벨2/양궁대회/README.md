@@ -1,4 +1,4 @@
-# 후보키
+# 양궁대회
 
 ### 문제 설명
 
@@ -56,4 +56,8 @@ https://school.programmers.co.kr/learn/courses/30/lessons/92342
 
 -----------
 ## 풀이
-1. 
+1. 재귀를 이용하여 각 점수를 맞춘 화살의 개수를 의미하는 배열`ryanInfo`를 초기화한다.
+2. `n`번째 재귀때 어피치의 `info`를 이용하여 점수를 계산한다.
+3. 점수 계산했을때 라이언이 승리한다면 정답을 찾은 것이므로 최고 점수차이면 `answer`에 `ryanInfo`를 기록한다.
+4. 재귀가 종료되었을때 `answer`를 리턴한다.
+5. 19번째 줄에 `if(apeachInfo[i]!=0 || ryanInfo[i]!=0)` 부분에서 `ryanInfo`와 `apeachInfo`를 바꾸면 시간초과가 나오므로 주의한다.
