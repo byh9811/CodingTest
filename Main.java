@@ -1,4 +1,4 @@
-import 프로그래머스.레벨2.양궁대회.Solution;
+import 프로그래머스.레벨3.추석_트래픽.Solution;
 
 import java.util.Arrays;
 
@@ -15,7 +15,7 @@ public class Main {
                 {5,6}
         };
 
-        String[] str1DArr = {"05:34 5961 IN", "06:00 0000 IN", "06:34 0000 OUT", "07:59 5961 OUT", "07:59 0148 IN", "18:59 0000 IN", "19:09 0148 OUT", "22:59 5961 IN", "23:00 5961 OUT"};
+        String[] str1DArr = {"2016-09-15 01:00:04.001 2.0s", "2016-09-15 01:00:07.000 2s"};
         String[][] str2DArr = {
                 {"100","ryan","music","2"},
                 {"200","apeach","math","2"},
@@ -43,7 +43,7 @@ public class Main {
                 {3,4}
         };
 
-        print(new Solution().solution(5, int1DArr));
+        print(new Solution().solution(str1DArr));
     }
 
     private static void print(Iterable<?> iterableObj) {
