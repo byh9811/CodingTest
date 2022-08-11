@@ -1,4 +1,4 @@
-import 프로그래머스.레벨3.추석_트래픽.Solution;
+import 프로그래머스.레벨3.브라이언의_고민.Solution;
 
 import java.util.Arrays;
 
@@ -43,7 +43,7 @@ public class Main {
                 {3,4}
         };
 
-        print(new Solution().solution(str1DArr));
+        print(new Solution().solution("AxAxAxAoBoBoB"));
     }
 
     private static void print(Iterable<?> iterableObj) {
