@@ -70,23 +70,19 @@ https://school.programmers.co.kr/learn/courses/30/lessons/1830
    2. 규칙 1에 따라 글자 사이에 기호가 삽입된 경우: HaEaLaLaO
    3. 규칙 2에 따라 글자 양 끝에 기호가 삽입된 경우: aHELLOa
    4. 규칙 1과 2를 모두 적용한 경우: aHbEbLbLbOa
-2. char형을 저장하는 type1Char와 type2Char를 선언하고, 파싱한 단어들을 저장할 ArrayList<String> 타입의 answer, 쓸 수 없는 문자를 저장할 Set<Character> used를 생성한다.
-3. sentence를 인덱스로 순회하며 다음을 수행한다.
-   1. 단어를 만들기 위한 StringBuilder sb를 생성한다. 
-   2. 현재 문자가 소문자인데 이미 사용한 문자면 invalid이다.
-   3. 처음 나온 소문자면 type2Char에 저장하고 1-3의 경우와 1-4의 경우를 체크해야 한다.
-      1. 두 칸 뒤에 문자가 없으면 invalid이다.
-      2. 두 칸 뒤의 문자를 확인하고 type2Char와 같거나 대문자이면 1-3의 경우이므로 다음 type2Char가 등장할 때까지 sb에 저장하고 String으로 변환하여 answer에 저장한다.
-      3. 두 칸 뒤의 문자가 type2Char와 다른 소문자이면 1-4의 경우일 가능성이 있으므로 type1Char에 해당 문자를 저장하고 다음을 수행한다.
-         1. type2Char가 나올 때까지 대문자를 sb에 저장하는 것을 반복하되, 사이에 끼어있는 소문자가 type1Char와 같은지 검사한다.
-         2. 하나라도 type1Char와 다르거나 문자열이 끝날 때까지 type2Char가 등장하지 않는 경우 invalid이다.
-         3. 위의 조건에 걸리지 않으면 sb를 String으로 변환하여 answer에 저장한다.
-      4. 확인했던 만큼 인덱스를 뒤로 옮긴다.
-   4. 현재 문자가 대문자면 1-1의 경우와 1-2의 경우를 체크해야 한다.
-      1. 다음 문자가 소문자이면 1-2의 경우일 가능성이 있으므로 type1Char에 저장하고 두 글자 단위로 읽어 확인한다.
-         1. 다음 두 글자가 type1Char + 대문자의 조합이면 대문자를 저장하고 반복한다.
-         2. 다음 두 글자가 type1Char + 소문자의 조합이면 invalid이다.
-         3. 1번의 경우 sb를 String으로 변환하여 answer에 저장한다.
-      2. 다음 문자가 대문자이면 1-1의 경우이므로 다음 소문자가 나오기 전까지 읽어 sb에 저장하고 String으로 변환하여 answer에 저장한다.
-      3. 확인했던 만큼 인덱스를 뒤로 옮긴다.
-4. 순회가 끝나면 answer를 빈칸으로 붙여 리턴한다.
+2. 이미 사용된 문자를 기록하기 위한 HashSet<Character>타입의 used, 변환한 단어들을 저장할 ArrayList<String> 타입의 answer를 생성하고 1-1유형의 단어 등장 여부를 체크하기 위한 int타입의 start를 0으로 초기화한다.
+3. sentence를 i로 순회하며 다음을 수행한다.
+   1. 대문자면 패스하고, 소문자면 다음을 수행한다.
+      1. 현재 문자가 used에 들어있으면 에러를 발생시킨다.
+      2. used에 현재 문자를 넣는다.
+      3. i가 sentence의 길이-2보다 크거나 2칸 뒤의 문자가 현재 문자와 같으면 parseRule1(i-1, cur)을 실행한다.
+         1. start가 i-1보다 작을 경우 sentence.substring(start, i-1)을 answer에 저장한다.
+      4. 2칸 뒤의 문자가 대문자면 parseRule2()를 실행한다.
+         1. start가 i보다 작을 경우 sentence.substring(start, i)를 answer에 저장한다.
+      5. 그 외엔 parseBothRules()을 실행한다.
+         1. start가 i보다 작을 경우 sentence.substring(start, i)를 answer에 저장한다.
+      6. 각 함수는 에러를 발생시킬 수 있으며 에러가 발생할 경우 invalid가 리턴된다.
+   2. 각 함수에서 반환된 인덱스만큼 인덱스를 증가시킨다.
+   3. start를 i+1로 변경한다.
+4. 순회가 끝났을 때 start와 sentence의 길이와 같지 않을 경우, 남은 대문자를 단어로 저장한다.
+5. answer에 저장된 단어를 이어붙여 리턴한다.

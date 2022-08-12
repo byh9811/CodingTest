@@ -43,7 +43,7 @@ public class Main {
                 {3,4}
         };
 
-        print(new Solution().solution("AxAxAxAoBoBoB"));
+        print(new Solution().solution("AaABbBbB"));
     }
 
     private static void print(Iterable<?> iterableObj) {
