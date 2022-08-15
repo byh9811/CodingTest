@@ -33,10 +33,11 @@ https://school.programmers.co.kr/learn/courses/30/lessons/60059
 
 -----------
 ## 풀이
-1. lock에 만들 수 있는 모든 key를 맞춰볼 수 있도록 로직을 구현한다.
-2. 1을 위해 lock을 확장한다.
-   1. lock의 (0, 0)이 key의 (n-1, n-1)과 겹치고 (n-1, n-1)이 (0, 0)과 겹칠 수 있도록 lock을 확장시킨 lock의 크기+(key의 크기*2)-2를 한 변의 크기로 하는 newLock을 생성한다.
-   2. newLock의 값을 lock에 맞춰 초기화한다.
-   3. newLock을 key로 순회하며 XOR연산을 진행한 뒤 lock부분의 모든 값이 1인지 확인한다. (lock부분은 newLock[key.length-1][key.length-1]부터 newLock[newLock.length-key.length][newLock.length-key.length]까지이다.)
-   4. 이 때, key를 한바퀴 회전하면서 모두 비교한다.
-   5. 모든 XOR값이 1이면 true를 리턴하고, 순회가 끝날때까지 없으면 false를 리턴한다.
+1. `lock`에 만들 수 있는 모든 `key`를 맞춰볼 수 있도록 로직을 구현한다.
+2. `lock`의 `(0, 0)`이 `key`의 `(n-1, n-1)`과 겹치고 `(n-1, n-1)`이 `(0, 0)`과 겹칠 수 있도록 `lock`을 확장시킨 `lock.length+(key.length-1)*2`를 한 변의 크기로 하는 `newLock`을 생성한다.
+3. `newLock`의 가운데 부분의 값을 `lock`에 맞춰 초기화한다.
+4. `newLock`을 `key`로 순회하며 XOR연산을 진행한 뒤 `lock`부분의 모든 값이 1인지 확인한다.
+   - `lock`부분은 `newLock[key.length-1][key.length-1]`부터 `newLock[newLock.length-key.length+1][newLock.length-key.length+1]`까지이다.
+   - 값이 1인지 확인하는 과정에서 `newLock`의 값이 바뀌므로 `lock`부분은 다시 초기화해줘야 한다.
+5. 이 때, `key`를 90도씩 회전하면서 모두 비교한다.
+6. 모든 XOR값이 1이면 `true`를 리턴하고, 순회가 끝날때까지 없으면 `false`를 리턴한다.
