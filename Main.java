@@ -1,3 +1,4 @@
+import 유틸.Rotate;
 import 프로그래머스.레벨3.브라이언의_고민.Solution;
 
 import java.util.Arrays;
@@ -7,8 +8,9 @@ public class Main {
         int[] int1DArr = {2,1,1,1,0,0,0,0,0,0,0};
         int[] int1DArr2 = {3, 4};
         int[][] int2DArr = {
-                {1,2},
-                {3,4}
+                {1,2,3},
+                {4,5,6},
+                {7,8,9}
         };
         int[][] int2DArr2 = {
                 {3,4},
