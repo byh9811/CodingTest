@@ -1,4 +1,4 @@
-package 유틸;
+package 유틸.이차원_배열;
 
 public class Rotate {
     /**
