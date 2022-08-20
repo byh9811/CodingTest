@@ -44,7 +44,18 @@ public class Main {
                 {3,4}
         };
 
-        print(new Solution().solution("AaABbBbB"));
+        //print(new Solution().solution("AaABbBbB"));
+        print(isLeapYear(1999));
+    }
+    private static boolean isLeapYear(int year) {
+        if(year%400==0)
+            return true;
+        else if(year%100==0)
+            return false;
+        else if(year%4==0)
+            return true;
+        else
+            return false;
     }
 
     private static void print(Iterable<?> iterableObj) {
