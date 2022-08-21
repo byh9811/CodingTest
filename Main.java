@@ -1,6 +1,8 @@
 import 프로그래머스.레벨3.브라이언의_고민.Solution;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -45,17 +47,22 @@ public class Main {
         };
 
         //print(new Solution().solution("AaABbBbB"));
-        print(isLeapYear(1999));
+        print(isPrimeWithEratos(120));
     }
-    private static boolean isLeapYear(int year) {
-        if(year%400==0)
-            return true;
-        else if(year%100==0)
-            return false;
-        else if(year%4==0)
-            return true;
-        else
-            return false;
+    private static List<Integer> isPrimeWithEratos(int max) {
+        boolean[] isPrime = new boolean[max+1];
+        Arrays.fill(isPrime, true);
+        List<Integer> ret = new ArrayList<>();
+
+        for(int i=2; i<=max; i++) {
+            if(isPrime[i]) {
+                ret.add(i);
+                for(int j=i*i; j<=max; j+=i)
+                    isPrime[j] = false;
+            }
+        }
+
+        return ret;
     }
 
     private static void print(Iterable<?> iterableObj) {
