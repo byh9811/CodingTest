@@ -47,22 +47,10 @@ public class Main {
         };
 
         //print(new Solution().solution("AaABbBbB"));
-        print(isPrimeWithEratos(120));
+        print(getGCD(60, 48));
     }
-    private static List<Integer> isPrimeWithEratos(int max) {
-        boolean[] isPrime = new boolean[max+1];
-        Arrays.fill(isPrime, true);
-        List<Integer> ret = new ArrayList<>();
-
-        for(int i=2; i<=max; i++) {
-            if(isPrime[i]) {
-                ret.add(i);
-                for(int j=i*i; j<=max; j+=i)
-                    isPrime[j] = false;
-            }
-        }
-
-        return ret;
+    private static int getGCD(int big, int small) {
+        return big%small==0 ? small : getGCD(small, big%small);
     }
 
     private static void print(Iterable<?> iterableObj) {
