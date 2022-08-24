@@ -1,3 +1,5 @@
+import 유틸.Combination;
+import 유틸.Utils;
 import 프로그래머스.레벨3.브라이언의_고민.Solution;
 
 import java.util.ArrayList;
@@ -6,7 +8,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        int[] int1DArr = {1,4,2,3,5,6,9,8,7};
+        int[] int1DArr = {1,2,3,4};
         int[] int1DArr2 = {3, 4};
         int[][] int2DArr = {
                 {1,2,3},
@@ -47,10 +49,7 @@ public class Main {
         };
 
         //print(new Solution().solution("AaABbBbB"));
-        print(getGCD(60, 48));
-    }
-    private static int getGCD(int big, int small) {
-        return big%small==0 ? small : getGCD(small, big%small);
+        new Combination(int1DArr).combination(0, 4);
     }
 
     private static void print(Iterable<?> iterableObj) {
