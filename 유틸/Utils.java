@@ -149,7 +149,7 @@ public final class Utils {
     }
 
     /**
-     * <h1>String의 인덱스를 swap하여 반환하는 메서드</h1>
+     * <h1>String의 특정 인덱스 문자를 swap하여 반환하는 메서드</h1>
      * <li>i와 j는 순서대로 들어오지 않아도 된다.</li>
      *
      * @param str 문자열 소스
@@ -163,4 +163,19 @@ public final class Utils {
 
         return str.substring(0, front) + str.charAt(back) + str.substring(front+1, back) + str.charAt(front) + str.substring(back+1);
     }
+
+    /**
+     * <h1>배열의 특정 인덱스 원소를 swap하는 메서드</h1>
+     * <li>i와 j는 순서대로 들어오지 않아도 된다.</li>
+     *
+     * @param arr 변환활 배열
+     * @param i 옮길 인덱스 1
+     * @param j 옮길 인덱스 2
+     */
+    public static void swap(int[] arr, int i, int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+
 }

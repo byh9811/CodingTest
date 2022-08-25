@@ -1,4 +1,5 @@
 import 유틸.Combination;
+import 유틸.Permutation;
 import 유틸.Utils;
 import 프로그래머스.레벨3.브라이언의_고민.Solution;
 
@@ -49,7 +50,7 @@ public class Main {
         };
 
         //print(new Solution().solution("AaABbBbB"));
-        new Combination(int1DArr).combination(0, 4);
+        new Permutation().permutation(int1DArr, 0, 3);
     }
 
     private static void print(Iterable<?> iterableObj) {
