@@ -50,7 +50,7 @@ public class Main {
         };
 
         //print(new Solution().solution("AaABbBbB"));
-        new Permutation().permutation(int1DArr, 0, 3);
+        new Permutation(int1DArr, 4).permutationVisited(0);
     }
 
     private static void print(Iterable<?> iterableObj) {
