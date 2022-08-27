@@ -29,6 +29,16 @@ public class Permutation {
     }
 
     /**
+     * <h1>중복이 없는 순열의 경우의 수를 리턴하는 함수</h1>
+     * <li>공식은 n!/(n-k)!이다.</li>
+     *
+     * @return 경우의 수
+     */
+    public int getNumberOfCases() {
+        return Utils.factorial(arr.length) / Utils.factorial(arr.length-remain);
+    }
+
+    /**
      * <h1>중복이 없는 순열을 뽑는 함수</h1>
      * <li>재귀호출을 이용하여 구현했다.</li>
      * <li>사전순 출력을 보장하며 시간복잡도가 높다.</li>

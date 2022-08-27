@@ -178,4 +178,17 @@ public final class Utils {
         arr[j] = temp;
     }
 
+    /**
+     * <h1>재귀를 이용하여 팩토리얼을 구하는 함수</h1>
+     *
+     * @param num 변환활 배열
+     * @return num!
+     */
+    public static int factorial(int num) {
+        if(num==0)
+            return 1;
+
+        return num * factorial(num-1);
+    }
+
 }
