@@ -30,7 +30,7 @@ public class Permutation {
 
     /**
      * <h1>중복이 없는 순열의 경우의 수를 리턴하는 함수</h1>
-     * <li>공식은 n!/(n-k)!이다.</li>
+     * <li>공식은 n!/(n-r)!이다.</li>
      *
      * @return 경우의 수
      */
@@ -81,6 +81,24 @@ public class Permutation {
             permutationSwap(depth+1);
             Utils.swap(arr, depth, i);
         }
+    }
+
+    /**
+     * <h1>초기값을 설정하여 permutationVisited()를 실행하기 위한 함수</h1>
+     * <li>코딩테스트에 사용시 permutationVisited()와 함께 사용한다.</li>
+     * <li>depth에 0을 주어 호출한다.</li>
+     */
+    public void executePermutationVisited() {
+        permutationVisited(0);
+    }
+
+    /**
+     * <h1>초기값을 설정하여 permutationSwap()를 실행하기 위한 함수</h1>
+     * <li>코딩테스트에 사용시 permutationSwap()와 함께 사용한다.</li>
+     * <li>depth에 0을 주어 호출한다.</li>
+     */
+    public void executePermutationSwap() {
+        permutationVisited(0);
     }
 
     /**
