@@ -29,13 +29,15 @@ public class Permutation {
     }
 
     /**
-     * <h1>중복이 없는 순열의 경우의 수를 리턴하는 함수</h1>
-     * <li>공식은 n!/(n-r)!이다.</li>
+     * <h1>경우의 수를 리턴하는 함수</h1>
+     * <li>중복을 허용할 경우 공식은 n<sup>2</sup>이다.</li>
+     * <li>중복을 허용하지 않을 경우 공식은 n!/(n-r)!이다.</li>
      *
+     * @param repeatable 중복 허용 여부
      * @return 경우의 수
      */
-    public int getNumberOfCases() {
-        return Utils.factorial(arr.length) / Utils.factorial(arr.length-remain);
+    public int getNumberOfCases(boolean repeatable) {
+        return repeatable ? arr.length * arr.length : Utils.factorial(arr.length) / Utils.factorial(arr.length-remain);
     }
 
     /**
@@ -84,6 +86,25 @@ public class Permutation {
     }
 
     /**
+     * <h1>중복이 있는 순열을 뽑는 함수</h1>
+     * <li>재귀호출을 이용하여 구현했다.</li>
+     * <li>if문 안의 action()을 원하는 행동으로 교체하여 사용한다.</li>
+     *
+     * @param depth 반복을 시작할 인덱스
+     */
+    public void rePermutation(int depth) {
+        if(depth==remain) {
+            actionVisited();
+            return;
+        }
+
+        for(int i=0; i<arr.length; i++) {
+            ret[depth] = arr[i];
+            permutationVisited(depth+1);
+        }
+    }
+
+    /**
      * <h1>초기값을 설정하여 permutationVisited()를 실행하기 위한 함수</h1>
      * <li>코딩테스트에 사용시 permutationVisited()와 함께 사용한다.</li>
      * <li>depth에 0을 주어 호출한다.</li>
@@ -98,7 +119,17 @@ public class Permutation {
      * <li>depth에 0을 주어 호출한다.</li>
      */
     public void executePermutationSwap() {
-        permutationVisited(0);
+        permutationSwap(0);
+    }
+
+
+    /**
+     * <h1>초기값을 설정하여 rePermutation()를 실행하기 위한 함수</h1>
+     * <li>코딩테스트에 사용시 rePermutation()와 함께 사용한다.</li>
+     * <li>depth에 0을 주어 호출한다.</li>
+     */
+    public void executeRePermutation() {
+        rePermutation(0);
     }
 
     /**
