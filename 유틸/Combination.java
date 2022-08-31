@@ -51,7 +51,7 @@ public class Combination {
      *
      */
     public void executeCombination() {
-        combination(0, remain);
+        combination(0, 0);
     }
 
     /**
@@ -60,8 +60,8 @@ public class Combination {
      * <li>start에 0, remain에 생성자 생성시 받은 remain을 주어 호출한다.</li>
      *
      */
-    public void executeCReCombination() {
-        reCombination(0, remain);
+    public void executeReCombination() {
+        reCombination(0, 0);
     }
 
     /**
@@ -70,17 +70,17 @@ public class Combination {
      * <li>if문 안의 action()을 원하는 행동으로 교체하여 사용한다.</li>
      *
      * @param start 반복을 시작할 인덱스
-     * @param remain 남은 반복 횟수
+     * @param depth 현재 호출 깊이
      */
-    public void combination(int start, int remain) {
-        if(remain==0) {
+    public void combination(int start, int depth) {
+        if(depth==remain) {
             action();
             return;
         }
 
         for(int i=start; i<arr.length; i++) {
             visited[i] = true;
-            combination(i+1, remain-1);
+            combination(i+1, depth+1);
             visited[i] = false;
         }
     }
@@ -91,17 +91,17 @@ public class Combination {
      * <li>if문 안의 actionRepeatable()을 원하는 행동으로 교체하여 사용한다.</li>
      *
      * @param start 반복을 시작할 인덱스
-     * @param remain 남은 반복 횟수
+     * @param depth 현재 호출 깊이
      */
-    public void reCombination(int start, int remain) {
-        if(this.remain==remain) {
+    public void reCombination(int start, int depth) {
+        if(depth==remain) {
             actionRepeatable();
             return;
         }
 
         for(int i=start; i<arr.length; i++) {
-            ret[this.remain-remain] = arr[i];
-            combination(i, remain-1);
+            ret[depth] = arr[i];
+            reCombination(i, depth+1);
         }
     }
 

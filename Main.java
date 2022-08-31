@@ -50,7 +50,7 @@ public class Main {
         };
 
         //print(new Solution().solution("AaABbBbB"));
-        new Combination(int1DArr, 1).executeCReCombination();
+        new Combination(int1DArr, 3).executeReCombination();
         //print(Utils.factorial(4));
     }
 
