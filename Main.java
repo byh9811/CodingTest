@@ -1,4 +1,5 @@
 import 유틸.Combination;
+import 유틸.CompareExample;
 import 유틸.Permutation;
 import 유틸.Utils;
 import 프로그래머스.레벨3.브라이언의_고민.Solution;
@@ -9,7 +10,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        int[] int1DArr = {1,2,3,4};
+        int[] int1DArr = {4, 2, 3, 1};
         int[] int1DArr2 = {3, 4};
         int[][] int2DArr = {
                 {1,2,3},
@@ -50,7 +51,7 @@ public class Main {
         };
 
         //print(new Solution().solution("AaABbBbB"));
-        new Combination(int1DArr, 3).executeReCombination();
+        print(new CompareExample(1, 2, "hello").compare(Arrays.stream(int1DArr).boxed().toArray(Integer[]::new)));
         //print(Utils.factorial(4));
     }
 
