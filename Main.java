@@ -51,8 +51,7 @@ public class Main {
         };
 
         //print(new Solution().solution("AaABbBbB"));
-        print(new CompareExample(1, 2, "hello").compare(Arrays.stream(int1DArr).boxed().toArray(Integer[]::new)));
-        //print(Utils.factorial(4));
+        System.out.println(Arrays.toString(Utils.unboxing(Utils.boxing(int1DArr))));
     }
 
     private static void print(Iterable<?> iterableObj) {

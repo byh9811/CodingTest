@@ -191,4 +191,24 @@ public final class Utils {
         return num * factorial(num-1);
     }
 
+    /**
+     * <h1>기본타입 배열을 박싱된 기본 타입 배열로 변환하는 함수</h1>
+     *
+     * @param arr 변환활 기본 타입 배열
+     * @return 박싱된 기본 타입 배열
+     */
+    public static Integer[] boxing(int[] arr) {
+        return Arrays.stream(arr).boxed().toArray(Integer[]::new);
+    }
+
+    /**
+     * <h1>박싱된 기본 타입 배열을 기본타입 배열로 변환하는 함수</h1>
+     *
+     * @param arr 박싱된 기본 타입 배열
+     * @return 기본 타입 배열
+     */
+    public static int[] unboxing(Integer[] arr) {
+        return Arrays.stream(arr).mapToInt(i -> i).toArray();
+    }
+
 }
