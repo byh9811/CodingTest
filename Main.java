@@ -1,7 +1,4 @@
-import 유틸.Combination;
-import 유틸.CompareExample;
-import 유틸.Permutation;
-import 유틸.Utils;
+import 유틸.*;
 import 프로그래머스.레벨3.브라이언의_고민.Solution;
 
 import java.util.ArrayList;
@@ -10,7 +7,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        int[] int1DArr = {4, 2, 3, 1};
+        int[] int1DArr = {1, 3, 5, 7, 9};
         int[] int1DArr2 = {3, 4};
         int[][] int2DArr = {
                 {1,2,3},
@@ -51,7 +48,7 @@ public class Main {
         };
 
         //print(new Solution().solution("AaABbBbB"));
-        System.out.println(Arrays.toString(Utils.unboxing(Utils.boxing(int1DArr))));
+        System.out.println(new BinarySearch(int1DArr, 0).executeBinarySearch());
     }
 
     private static void print(Iterable<?> iterableObj) {
