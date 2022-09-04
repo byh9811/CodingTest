@@ -1,12 +1,12 @@
+import 백준.실버5.Solution;
 import 유틸.*;
-import 프로그래머스.레벨3.브라이언의_고민.Solution;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         int[] int1DArr = {1, 3, 5, 7, 9};
         int[] int1DArr2 = {3, 4};
         int[][] int2DArr = {
@@ -47,8 +47,7 @@ public class Main {
                 {3,4}
         };
 
-        //print(new Solution().solution("AaABbBbB"));
-        System.out.println(new BinarySearch(int1DArr, 0).executeBinarySearch());
+        new Solution().solution();
     }
 
     private static void print(Iterable<?> iterableObj) {

@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
-public class CompareExample implements Comparable<CompareExample> {
+public class Compare implements Comparable<Compare> {
     /**
      * 1순위 정렬 방식
      */
@@ -20,7 +20,7 @@ public class CompareExample implements Comparable<CompareExample> {
      */
     String third;
 
-    public CompareExample(int first, int second, String third) {
+    public Compare(int first, int second, String third) {
         this.first = first;
         this.second = second;
         this.third = third;
@@ -34,7 +34,7 @@ public class CompareExample implements Comparable<CompareExample> {
      * @param o 비교할 객체
      * @return (오름차순 기준)이 객체의 필드가 매개변수의 필드보다 크면 양수, 작으면 음수, 같으면 0
      */
-    public int compareTo(CompareExample o) {
+    public int compareTo(Compare o) {
         if(first!=o.first)
             return first-o.first;
         else if(second!=o.second)
