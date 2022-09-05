@@ -13,16 +13,14 @@ public class Solution {
             int N = Integer.parseInt(nums[0]);
             int M = Integer.parseInt(nums[1]);
 
-            System.out.println(factorial(M));
-            System.out.println(factorial(N));
-            System.out.println(factorial(M-N));
+            long ret = 1;
+
+            for(int j=0; j<N; j++) {
+                ret *= M - j;
+                ret /= j + 1;
+            }
+
+            System.out.println(ret);
         }
-    }
-
-    public long factorial(int num) {
-        if(num==0)
-            return 1;
-
-        return num * factorial(num-1);
     }
 }

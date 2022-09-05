@@ -17,14 +17,20 @@ public class Combination {
     private int[] ret;
 
     /**
+     * 총 배열의 크기
+     */
+    private int n;
+
+    /**
      * 총 뽑을 수의 크기
      */
-    private int remain;
+    private int r;
 
-    public Combination(int[] arr, int remain) {
+    public Combination(int[] arr, int r) {
         this.arr = arr;
-        this.remain = remain;
-        ret = new int[remain];
+        this.r = r;
+        n = arr.length;
+        ret = new int[r];
         visited = new boolean[arr.length];
     }
 
@@ -32,16 +38,27 @@ public class Combination {
      * <h1>조합의 경우의 수를 리턴하는 함수</h1>
      * <li>중복을 허용하지 않는 조합의 공식은 n!/r!*(n-r)!이다.</li>
      * <li>중복을 허용하는 조합은 <sub>n+r-1</sub>C<sub>r</sub>이다.</li>
+     * <li>하지만 N이 큰 수 일때를 대비하여 팩토리얼을 사용하지 않고 정의를 이용하여 구했다.</li>
      *
      * @param repeatable 중복 허용 여부
      * @return 경우의 수
      */
-    public int getNumberOfCases(boolean repeatable) {
+    public long getNumberOfCases(boolean repeatable) {
+        long ret = 1;
 
-        if(!repeatable)
-            return Utils.factorial(arr.length) / (Utils.factorial(remain)*Utils.factorial(arr.length-remain));
-        else
-            return Utils.factorial(arr.length+remain-1) / (Utils.factorial(remain)*Utils.factorial(arr.length-1));
+        if(repeatable) {
+            for(int i=0; i<r; i++) {
+                ret *= n + r - 1 - i;
+                ret /= i + 1;
+            }
+        } else {
+            for(int i=0; i<r; i++) {
+                ret *= n - i;
+                ret /= i + 1;
+            }
+        }
+
+        return ret;
     }
 
     /**
@@ -73,12 +90,12 @@ public class Combination {
      * @param depth 현재 호출 깊이
      */
     public void combination(int start, int depth) {
-        if(depth==remain) {
+        if(depth==r) {
             action();
             return;
         }
 
-        for(int i=start; i<arr.length; i++) {
+        for(int i=start; i<n; i++) {
             visited[i] = true;
             combination(i+1, depth+1);
             visited[i] = false;
@@ -94,12 +111,12 @@ public class Combination {
      * @param depth 현재 호출 깊이
      */
     public void reCombination(int start, int depth) {
-        if(depth==remain) {
+        if(depth==r) {
             actionRepeatable();
             return;
         }
 
-        for(int i=start; i<arr.length; i++) {
+        for(int i=start; i<n; i++) {
             ret[depth] = arr[i];
             reCombination(i, depth+1);
         }
@@ -110,7 +127,7 @@ public class Combination {
      * <li>기본은 조합을 출력하는 기능이 구현되어 있다.</li>
      */
     private void action() {
-        for(int i=0; i<arr.length; i++) {
+        for(int i=0; i<n; i++) {
             if(visited[i])
                 System.out.print(arr[i] + " ");
         }
