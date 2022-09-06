@@ -1,4 +1,4 @@
-import 백준.실버5.Solution;
+import 프로그래머스.레벨1.성격_유형_검사하기.Solution;
 import 유틸.*;
 
 import java.util.ArrayList;
@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        int[] int1DArr = {1, 3, 5, 7, 9};
+        int[] int1DArr = {5, 3, 2, 7, 5};
         int[] int1DArr2 = {3, 4};
         int[][] int2DArr = {
                 {1,2,3},
@@ -19,7 +19,7 @@ public class Main {
                 {5,6}
         };
 
-        String[] str1DArr = {"2016-09-15 01:00:04.002 2.0s", "2016-09-15 01:00:07.000 2s"};
+        String[] str1DArr = {"AN", "CF", "MJ", "RT", "NA"};
         String[][] str2DArr = {
                 {"100","ryan","music","2"},
                 {"200","apeach","math","2"},
@@ -47,7 +47,7 @@ public class Main {
                 {3,4}
         };
 
-        new Solution().solution();
+        print(new Solution().solution(str1DArr, int1DArr));
     }
 
     private static void print(Iterable<?> iterableObj) {
