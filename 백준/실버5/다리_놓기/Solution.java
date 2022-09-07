@@ -1,4 +1,4 @@
-package 백준.실버5;
+package 백준.실버5.다리_놓기;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

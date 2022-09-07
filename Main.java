@@ -1,4 +1,4 @@
-import 프로그래머스.레벨1.성격_유형_검사하기.Solution;
+import 백준.실버5.막대기.Solution;
 import 유틸.*;
 
 import java.util.ArrayList;
@@ -47,7 +47,7 @@ public class Main {
                 {3,4}
         };
 
-        print(new Solution().solution(str1DArr, int1DArr));
+        new Solution().solution();
     }
 
     private static void print(Iterable<?> iterableObj) {
