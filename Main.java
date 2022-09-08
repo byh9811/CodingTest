@@ -1,4 +1,4 @@
-import 백준.실버5.막대기.Solution;
+import 백준.실버5.단어_정렬.Solution;
 import 유틸.*;
 
 import java.util.ArrayList;
