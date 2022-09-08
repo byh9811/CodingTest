@@ -31,4 +31,4 @@ https://www.acmicpc.net/problem/1181
 3. 단어를 입력받고 `Word` 클래스로 변환하여 `wordList`에 저장한다.
 4. `wordList`를 오름차순으로 정렬하고 출력한다.
 
-- 배열에 단어를 
+- 배열에 단어를 넣고 Arrays.sort()로 정렬방식을 지정하는 방식도 가능
