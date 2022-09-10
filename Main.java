@@ -1,4 +1,4 @@
-import 백준.실버5.단어_나누기.Solution;
+import 백준.실버5.D_Day.Solution;
 import 유틸.*;
 
 import java.util.ArrayList;
