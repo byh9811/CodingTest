@@ -2,7 +2,6 @@ package 백준.실버5.D_Day;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
 
 public class Solution {
     public void solution() throws Exception {
@@ -15,20 +14,23 @@ public class Solution {
         int ey = Integer.parseInt(end[0]);
         int em = Integer.parseInt(end[1]);
         int ed = Integer.parseInt(end[2]);
-        int day = 0;
 
         if(ey-sy>1000 || (ey-sy==1000 && em-sm>0) || (ey-sy==1000 && em-sm==0 && ed-sd>=0)) {
             System.out.println("gg");
             return;
         }
 
-        for(int i=sy; i<ey; i++)
-            day += isLeapYear(i) ? 366 : 365;
-        for(int i=sm; i<em; i++)
-            day += getDays(ey, i);
-        day += ed-sd;
+        for(int i=1; i<sy; i++)
+            sd += isLeapYear(i) ? 366 : 365;
+        for(int i=1; i<sm; i++)
+            sd += getDays(sy, i);
 
-        System.out.println("D-" + day);
+        for(int i=1; i<ey; i++)
+            ed += isLeapYear(i) ? 366 : 365;
+        for(int i=1; i<em; i++)
+            ed += getDays(ey, i);
+
+        System.out.println("D-" + (ed-sd));
     }
 
     private boolean isLeapYear(int year) {
