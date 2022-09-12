@@ -1,4 +1,4 @@
-import 백준.실버5.D_Day.Solution;
+import 백준.실버5.소수.Solution;
 
 import java.util.Arrays;
 
