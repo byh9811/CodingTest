@@ -1,4 +1,4 @@
-import 백준.실버5.그룹_단어_체커.Solution;
+import 백준.실버5.나이트_투어.Solution;
 
 import java.util.Arrays;
 
