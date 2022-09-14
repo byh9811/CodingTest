@@ -54,6 +54,30 @@ public final class Utils {
     }
 
     /**
+     * <h1>월 정보의 String과 int타입을 묶어놓은 해시맵을 구하는 함수</h1>
+     *
+     * @return String 타입의 정보를 키로, int 타입의 정보를 값으로 가진 월 정보 해시맵
+     */
+    public static HashMap<String, Integer> getMonthMap() {
+        HashMap<String, Integer> map = new HashMap<>();
+
+        map.put("January", 1);
+        map.put("February", 2);
+        map.put("March", 3);
+        map.put("April", 4);
+        map.put("May", 5);
+        map.put("June", 6);
+        map.put("July", 7);
+        map.put("August", 8);
+        map.put("September", 9);
+        map.put("October", 10);
+        map.put("November", 11);
+        map.put("December ", 12);
+
+        return map;
+    }
+
+    /**
      * <h1>현재 연도를 입력받아 윤년인지 확인하는 함수</h1>
      * <li>윤년은 2월이 29일로 하루가 더 많은 해이다.</li>
      * <li>현재 연도가 4의 배수면 윤년이지만, 100의 배수이면 아니고, 400의 배수이면 윤년이다.</li>
@@ -70,6 +94,26 @@ public final class Utils {
             return true;
         else
             return false;
+    }
+
+    /**
+     * <h1>연도와 월을 입력받아 해당 월이 몇일인지 확인하는 함수</h1>
+     * <li>윤년을 고려하기 위해 연도를 받는다.</li>
+     * <li>1,3,5,7,8,10,12 - 31일</li>
+     * <li>4,6,9,11 - 30일</li>
+     * <li>2 - 28일 or 29일</li>
+     *
+     * @param year 현재 연도
+     * @param month 현재 월
+     * @return 해당 월의 일수
+     */
+    public static int getDays(int year, int month) {
+        switch (month) {
+            case 1: case 3: case 5: case 7: case 8: case 10: case 12: return 31;
+            case 4: case 6: case 9: case 11: return 30;
+            case 2: return isLeapYear(year) ? 29 : 28;
+            default: return -1;
+        }
     }
 
     /**
