@@ -1,4 +1,4 @@
-import 백준.실버5.나이트_투어.Solution;
+import 백준.실버5.연도_진행바.Solution;
 
 import java.util.Arrays;
 
