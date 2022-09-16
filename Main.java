@@ -1,4 +1,4 @@
-import 백준.실버5.폴리오미노.Solution;
+import 백준.실버5.귀걸이.Solution;
 
 import java.util.Arrays;
 
