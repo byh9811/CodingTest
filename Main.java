@@ -1,4 +1,4 @@
-import 백준.실버5.메시지.Solution;
+import 백준.실버5.아무래도이문제는A번난이도인것같다.Solution;
 
 import java.util.Arrays;
 
