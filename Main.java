@@ -1,4 +1,4 @@
-import 백준.실버5.국회의원_선거.Solution;
+import 백준.실버5.K_세준수.Solution;
 
 import java.util.Arrays;
 
