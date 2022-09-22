@@ -1,4 +1,4 @@
-import 백준.실버5.영화감독_숌.Solution;
+import 백준.실버5.뒤집기.Solution;
 
 import java.util.Arrays;
 
