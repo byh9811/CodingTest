@@ -1,4 +1,4 @@
-import 백준.실버5.방_번호.Solution;
+import 백준.실버5.투명.Solution;
 
 import java.util.Arrays;
 

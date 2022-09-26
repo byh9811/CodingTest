@@ -7,33 +7,32 @@ import java.util.HashSet;
 public class Solution {
     public void solution() throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        HashSet<String> visited = new HashSet<>();
-        String firstInput = br.readLine();
-        char firstRow = firstInput.charAt(0);
-        char prevRow = firstRow;
-        char firstCol = firstInput.charAt(1);
-        char prevCol = firstCol;
-        visited.add(firstInput);
+        int[][] arr = new int[101][101];
+        String[] input = br.readLine().split(" ");
+        int N = Integer.parseInt(input[0]);
+        int M = Integer.parseInt(input[1]);
 
-        for(int i=0; i<35; i++) {
-            String input = br.readLine();
-            char row = input.charAt(0);
-            char col = input.charAt(1);
-            int rowDif = Math.abs(row-prevRow);
-            int colDif = Math.abs(col-prevCol);
+        for(int i=0; i<N; i++) {
+            String[] coordinates = br.readLine().split(" ");
+            int startX = Integer.parseInt(coordinates[0]);
+            int startY = Integer.parseInt(coordinates[1]);
+            int endX = Integer.parseInt(coordinates[2]);
+            int endY = Integer.parseInt(coordinates[3]);
 
-            if(visited.contains(input) || rowDif==3 || colDif==3 || rowDif+colDif!=3) {
-                System.out.println("Invalid");
-                return;
+            for(int j=startY; j<=endY; j++) {
+                for(int k=startX; k<=endX; k++)
+                    arr[j][k]++;
             }
-
-            prevRow = row;
-            prevCol = col;
-            visited.add(input);
         }
 
-        int rowDif = Math.abs(firstRow-prevRow);
-        int colDif = Math.abs(firstCol-prevCol);
-        System.out.println(rowDif!=3 && colDif!=3 && rowDif+colDif==3 ? "Valid" : "Invalid");
+        int cnt = 0;
+        for(int i=0; i<arr.length; i++) {
+            for(int j=0; j<arr.length; j++) {
+                if(arr[i][j]>M)
+                    cnt++;
+            }
+        }
+
+        System.out.println(cnt);
     }
 }
