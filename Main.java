@@ -1,4 +1,4 @@
-import 백준.실버5.날짜_계산.Solution;
+import 백준.실버5.팩토리얼_0의_개수.Solution;
 
 import java.util.Arrays;
 
