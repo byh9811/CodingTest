@@ -1,4 +1,4 @@
-import 백준.실버5.판화.Solution;
+import 백준.실버5.삼의_배수.Solution;
 
 import java.util.Arrays;
 
