@@ -1,4 +1,4 @@
-import 백준.실버5.짐_챙기는_숌.Solution;
+import 백준.실버5.삼각형.Solution;
 
 import java.util.Arrays;
 
