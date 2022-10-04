@@ -1,4 +1,4 @@
-import 백준.실버5.DNA.Solution;
+import 백준.실버5.지뢰_찾기.Solution;
 
 import java.util.Arrays;
 
