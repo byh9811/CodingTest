@@ -24,6 +24,11 @@ https://www.acmicpc.net/problem/1969
 -----------
 ## 풀이
 1. N의 크기를 가지는 String형 배열을 생성하고 입력받아 초기화한다.
-2. Hamming Distance를 기록할 HashMap을 생성한다.
-3. 각 줄을 순회하며 다른 줄들과 비교하고 HashMap에 기록한다.
-4. HashMap을 순회하며 가장 큰 값을 출력한다.
+2. 정답 DNA를 기록할 StringBuilder를 생성한다.
+3. Hamming Distance를 기록할 int형 변수를 0으로 초기화한다.
+2. 0부터 M까지 순회하며 다음을 수행한다.
+   3. ATCG가 나온 횟수를 기록하는 int형 배열을 생성한다.
+   4. 0부터 N까지 순회하며 각 dna의 현재 인덱스의 문자가 등장한 횟수를 기록한다.
+   3. 가장 많이 나온 문자를 StringBuilder에 저장한다.
+   4. N에서 가장 많이 나온 횟수를 빼서 
+4. StringBuilder와 Hamming Distance를 형식에 맞게 출력한다.
