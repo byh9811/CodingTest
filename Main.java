@@ -1,4 +1,4 @@
-import 백준.실버5.지뢰_찾기.Solution;
+import 백준.실버5.반음.Solution;
 
 import java.util.Arrays;
 
