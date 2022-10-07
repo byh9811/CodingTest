@@ -1,4 +1,4 @@
-import 백준.실버5.팩토리얼_분해.Solution;
+import 프로그래머스.레벨3.아이템_줍기.Solution;
 
 import java.util.Arrays;
 
@@ -7,9 +7,10 @@ public class Main {
         int[] int1DArr = {5, 3, 2, 7, 5};
         int[] int1DArr2 = {3, 4};
         int[][] int2DArr = {
-                {1,2,3},
-                {4,5,6},
-                {7,8,9}
+                {1,1,7,4},
+                {3,2,5,5},
+                {4,3,6,9},
+                {2,6,8,8}
         };
         int[][] int2DArr2 = {
                 {3,4},
@@ -44,7 +45,7 @@ public class Main {
                 {3,4}
         };
 
-        new Solution().solution();
+        print(new Solution().solution(int2DArr, 1, 3, 7, 8));
     }
 
     private static void print(Iterable<?> iterableObj) {
