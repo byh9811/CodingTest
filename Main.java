@@ -1,4 +1,4 @@
-import 프로그래머스.레벨3.아이템_줍기.Solution;
+import 백준.실버5.셀프_넘버.Solution;
 
 import java.util.Arrays;
 
@@ -45,7 +45,7 @@ public class Main {
                 {3,4}
         };
 
-        print(new Solution().solution(int2DArr, 1, 3, 7, 8));
+        new Solution().solution();
     }
 
     private static void print(Iterable<?> iterableObj) {
