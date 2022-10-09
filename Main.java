@@ -1,4 +1,4 @@
-import 백준.실버5.셀프_넘버.Solution;
+import 백준.실버5.소수_찾기.Solution;
 
 import java.util.Arrays;
 
