@@ -1,4 +1,4 @@
-import 백준.실버5.소수_찾기.Solution;
+import 백준.실버5.크로아티아_알파벳.Solution;
 
 import java.util.Arrays;
 
