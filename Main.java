@@ -1,4 +1,4 @@
-import 백준.실버5.크로아티아_알파벳.Solution;
+import 백준.실버5.달팽이는_올라가고_싶다.Solution;
 
 import java.util.Arrays;
 
