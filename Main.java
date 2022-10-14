@@ -1,4 +1,4 @@
-import 백준.실버5.나이순_정렬.Solution;
+import 백준.실버5.집합.Solution;
 
 import java.util.Arrays;
 
