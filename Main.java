@@ -1,4 +1,4 @@
-import 백준.실버5.집합.Solution;
+import 백준.실버5.조약돌.Solution;
 
 import java.util.Arrays;
 
