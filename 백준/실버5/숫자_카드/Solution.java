@@ -6,15 +6,19 @@ import java.io.InputStreamReader;
 public class Solution {
     public void solution() throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int range = 10000000;
+        boolean[] card = new boolean[range*2+1];
+        int N = Integer.parseInt(br.readLine());
         String[] input = br.readLine().split(" ");
-        int A = Integer.parseInt(input[0]);
-        int B = Integer.parseInt(input[1]);
-        int V = Integer.parseInt(input[2]);
+        for(int i=0; i<N; i++)
+            card[Integer.parseInt(input[i])+range] = true;
 
-        int mpd = A - B;
-        int goal = V - A;
-        int answer = goal / mpd;
+        int M = Integer.parseInt(br.readLine());
+        String[] input2 = br.readLine().split(" ");
+        StringBuilder sb = new StringBuilder();
+        for(int i=0; i<M; i++)
+            sb.append(card[Integer.parseInt(input2[i])+range] ? 1 : 0).append(' ');
 
-        System.out.println(goal%mpd == 0 ? answer+1 : answer+2);
+        System.out.print(sb);
     }
 }
