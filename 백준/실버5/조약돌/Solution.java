@@ -6,15 +6,18 @@ import java.io.InputStreamReader;
 public class Solution {
     public void solution() throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String[] input = br.readLine().split(" ");
-        int A = Integer.parseInt(input[0]);
-        int B = Integer.parseInt(input[1]);
-        int V = Integer.parseInt(input[2]);
+        int N = Integer.parseInt(br.readLine());
+        if(N<=4) {
+            System.out.print(4);
+            return;
+        }
 
-        int mpd = A - B;
-        int goal = V - A;
-        int answer = goal / mpd;
-
-        System.out.println(goal%mpd == 0 ? answer+1 : answer+2);
+        int root = (int)Math.sqrt(N);
+        if(N==root*root)
+            System.out.print((root-1)*4);
+        else if(N>root*root+root)
+            System.out.print(root*4);
+        else
+            System.out.print((root*2-1)*2);
     }
 }
