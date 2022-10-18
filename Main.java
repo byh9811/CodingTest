@@ -1,4 +1,4 @@
-import 백준.실버5.카드1.Solution;
+import 백준.실버5.K번째_수.Solution;
 
 import java.util.Arrays;
 
