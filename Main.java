@@ -1,4 +1,4 @@
-import 백준.실버5.돌_게임.Solution;
+import 백준.실버5.배열_합치기.Solution;
 
 import java.util.Arrays;
 
