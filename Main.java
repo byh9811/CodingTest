@@ -1,4 +1,4 @@
-import 백준.실버5.이차원_배열의_합.Solution;
+import 백준.실버5.중복_빼고_정렬하기.Solution;
 
 import java.util.Arrays;
 
