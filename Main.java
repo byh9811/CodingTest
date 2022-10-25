@@ -1,4 +1,4 @@
-import 백준.실버5.돌_게임_2.Solution;
+import 백준.실버5.올림픽.Solution;
 
 import java.util.Arrays;
 
