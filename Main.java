@@ -1,4 +1,4 @@
-import 백준.실버5.피보나치_수_4.Solution;
+import 백준.실버5.거스름돈.Solution;
 
 import java.util.Arrays;
 
