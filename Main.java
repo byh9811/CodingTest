@@ -1,4 +1,4 @@
-import 백준.실버5.생일.Solution;
+import 백준.실버5.Base_Conversion.Solution;
 
 import java.util.Arrays;
 
