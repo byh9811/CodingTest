@@ -1,4 +1,4 @@
-import 백준.실버5.Base_Conversion.Solution;
+import 백준.실버5.타일_장식물.Solution;
 
 import java.util.Arrays;
 
