@@ -1,4 +1,4 @@
-import 백준.실버5.최소공배수.Solution;
+import 백준.실버5.성적_통계.Solution;
 
 import java.util.Arrays;
 
