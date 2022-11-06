@@ -1,4 +1,4 @@
-import 백준.실버5.종이자르기.Solution;
+import 백준.실버5.UCPC는_무엇의_약자일까.Solution;
 
 import java.util.Arrays;
 
