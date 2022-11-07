@@ -1,4 +1,4 @@
-import 백준.실버5.UCPC는_무엇의_약자일까.Solution;
+import 백준.골드5.Fly_me_to_the_Alpha_Centauri.Solution;
 
 import java.util.Arrays;
 
