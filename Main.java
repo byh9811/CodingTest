@@ -1,4 +1,4 @@
-import 백준.골드5.Fly_me_to_the_Alpha_Centauri.Solution;
+import 백준.골드5.제곱수_찾기.Solution;
 
 import java.util.Arrays;
 
