@@ -1,4 +1,4 @@
-import 백준.골드5.평범한_배낭.Solution;
+import 백준.골드5.적록색약.Solution;
 
 import java.util.Arrays;
 
