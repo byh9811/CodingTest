@@ -1,4 +1,4 @@
-import 백준.골드5.치킨_배달.Solution;
+import 백준.골드5.로봇_청소기.Solution;
 
 import java.util.Arrays;
 
