@@ -1,4 +1,4 @@
-import 백준.골드5.리모컨.Solution;
+import 백준.골드5.톱니바퀴.Solution;
 
 import java.util.Arrays;
 
