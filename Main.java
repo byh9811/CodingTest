@@ -1,4 +1,4 @@
-import 백준.골드5.톱니바퀴.Solution;
+import 백준.골드5.합분해.Solution;
 
 import java.util.Arrays;
 
