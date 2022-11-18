@@ -22,39 +22,42 @@ public class Solution {
         for(int i=0; i<K; i++) {
             StringTokenizer st = new StringTokenizer(br.readLine());
             int idx = Integer.parseInt(st.nextToken()) - 1;
-            boolean turnRight = Integer.parseInt(st.nextToken())==1;
-            turnGear(gear[idx], turnRight);
+            boolean originalTurnRight = Integer.parseInt(st.nextToken())==1;
+            turnGear(gear[idx], originalTurnRight);
+            boolean prevTurnRight = originalTurnRight;
             for(int j=idx-1; j>=0; j--) {
-                if(turnRight) {
+                if(prevTurnRight) {
                     if(checkPole(gear[j], 2)==gear[j+1].peekLast())
                         break;
                     else
-                        turnGear(gear[j], (idx-j)%2==0);
+                        turnGear(gear[j], false);
                 } else {
                     if(checkPole(gear[j], 2)==checkPole(gear[j+1], 5))
                         break;
                     else
-                        turnGear(gear[j], (idx-j)%2!=0);
+                        turnGear(gear[j], true);
                 }
+                prevTurnRight = !prevTurnRight;
             }
+            prevTurnRight = originalTurnRight;
             for(int j=idx+1; j<4; j++) {
-                if(turnRight) {
+                if(prevTurnRight) {
                     if(checkPole(gear[j], 6)==checkPole(gear[j-1], 3))
                         break;
                     else
-                        turnGear(gear[j], (idx-j)%2==0);
+                        turnGear(gear[j], false);
                 } else {
                     if(checkPole(gear[j], 6)==checkPole(gear[j-1], 1))
                         break;
                     else
-                        turnGear(gear[j], (idx-j)%2!=0);
+                        turnGear(gear[j], true);
                 }
+                prevTurnRight = !prevTurnRight;
             }
         }
 
         int answer = 0;
         for(int i=0; i<4; i++) {
-            System.out.println(gear[i].peekFirst());
             if(gear[i].peekFirst())
                 answer += Math.pow(2, i);
         }
@@ -63,7 +66,6 @@ public class Solution {
     }
 
     private void turnGear(Deque<Boolean> gear, boolean turnRight) {
-        System.out.println(turnRight);
         if(turnRight)
             gear.addFirst(gear.pollLast());
         else
@@ -71,7 +73,6 @@ public class Solution {
     }
 
     private boolean checkPole(Deque<Boolean> gear, int idx) {
-        System.out.print(idx + " ");
         boolean pole;
         Stack<Boolean> stk = new Stack<>();
 
@@ -90,7 +91,6 @@ public class Solution {
                 gear.addLast(stk.pop());
         }
 
-        System.out.println(pole);
         return pole;
     }
 }
