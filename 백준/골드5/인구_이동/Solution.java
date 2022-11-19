@@ -27,7 +27,7 @@ public class Solution {
 
         while(true) {
             int[][] union = new int[N][N];
-            HashMap<Integer, Integer> average = new HashMap<>();
+            int[] average = new int[N*N+1];
             int idx = 1;
 
             for(int i=0; i<N; i++) {
@@ -35,17 +35,17 @@ public class Solution {
                     if(union[i][j]!=0)
                         continue;
 
-                    average.put(idx, getAverage(i, j, idx, union));
+                    average[idx] = getAverage(i, j, idx, union);
                     idx++;
                 }
             }
 
-            if(average.size()==N*N)
+            if(idx==N*N+1)
                 break;
 
             for(int i=0; i<N; i++) {
                 for(int j=0; j<N; j++)
-                    map[i][j] = average.get(union[i][j]);
+                    map[i][j] = average[union[i][j]];
             }
             answer++;
         }
