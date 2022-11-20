@@ -1,4 +1,4 @@
-import 백준.골드5.인구_이동.Solution;
+import 백준.골드5.전깃줄.Solution;
 
 import java.util.Arrays;
 
