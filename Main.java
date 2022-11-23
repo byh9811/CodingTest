@@ -1,4 +1,4 @@
-import 백준.골드5.내려가기.Solution;
+import 백준.골드5.보물섬.Solution;
 
 import java.util.Arrays;
 
