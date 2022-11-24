@@ -1,4 +1,4 @@
-import 백준.골드5.보물섬.Solution;
+import 백준.골드5.트리.Solution;
 
 import java.util.Arrays;
 
