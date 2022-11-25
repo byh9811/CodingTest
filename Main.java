@@ -1,4 +1,4 @@
-import 백준.골드5.트리.Solution;
+import 백준.골드5.두_용액.Solution;
 
 import java.util.Arrays;
 
