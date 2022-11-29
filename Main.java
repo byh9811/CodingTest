@@ -1,4 +1,4 @@
-import 백준.골드5.CCW.Solution;
+import 백준.골드5.강의실_배정.Solution;
 
 import java.util.Arrays;
 
