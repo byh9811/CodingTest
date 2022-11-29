@@ -1,4 +1,4 @@
-import 백준.골드5.뱀과_사다리_게임.Solution;
+import 백준.골드5.CCW.Solution;
 
 import java.util.Arrays;
 
