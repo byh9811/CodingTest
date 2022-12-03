@@ -1,4 +1,4 @@
-import 백준.골드5.ABCDE.Solution;
+import 백준.골드5.일학년.Solution;
 
 import java.util.Arrays;
 
