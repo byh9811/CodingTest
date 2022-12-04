@@ -1,4 +1,4 @@
-import 프로그래머스.레벨1.문자열_나누기.Solution;
+import 백준.골드5.다각형의_면적.Solution;
 
 import java.util.Arrays;
 
@@ -45,7 +45,7 @@ public class Main {
                 {3,4}
         };
 
-        print(new Solution().solution("aaabbaccccabba"));
+        new Solution().solution();
     }
 
     private static void print(Iterable<?> iterableObj) {
