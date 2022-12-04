@@ -1,4 +1,4 @@
-import 백준.골드5.일학년.Solution;
+import 프로그래머스.레벨1.문자열_나누기.Solution;
 
 import java.util.Arrays;
 
@@ -45,7 +45,7 @@ public class Main {
                 {3,4}
         };
 
-        new Solution().solution();
+        print(new Solution().solution("aaabbaccccabba"));
     }
 
     private static void print(Iterable<?> iterableObj) {
