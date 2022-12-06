@@ -1,4 +1,4 @@
-import 백준.골드5.다각형의_면적.Solution;
+import 백준.골드5.동전.Solution;
 
 import java.util.Arrays;
 
