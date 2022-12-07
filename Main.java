@@ -1,4 +1,4 @@
-import 백준.골드5.동전.Solution;
+import 백준.골드5.물통.Solution;
 
 import java.util.Arrays;
 
