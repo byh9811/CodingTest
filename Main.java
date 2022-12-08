@@ -1,4 +1,4 @@
-import 백준.골드5.물통.Solution;
+import 백준.골드5.컨베이어_벨트_위의_로봇.Solution;
 
 import java.util.Arrays;
 
