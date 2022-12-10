@@ -1,4 +1,4 @@
-import 백준.골드5.공통_부분_문자열.Solution;
+import 백준.골드5.상범_빌딩.Solution;
 
 import java.util.Arrays;
 
