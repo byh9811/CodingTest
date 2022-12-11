@@ -1,4 +1,4 @@
-import 백준.골드5.상범_빌딩.Solution;
+import 백준.골드5.숫자고르기.Solution;
 
 import java.util.Arrays;
 
