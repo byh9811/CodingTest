@@ -1,10 +1,10 @@
-import 백준.골드5.숫자고르기.Solution;
+import 프로그래머스.레벨1.삼총사.Solution;
 
 import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        int[] int1DArr = {5, 3, 2, 7, 5};
+        int[] int1DArr = {-1, 1, -1, 1};
         int[] int1DArr2 = {3, 4};
         int[][] int2DArr = {
                 {1,1,7,4},
@@ -45,7 +45,12 @@ public class Main {
                 {3,4}
         };
 
-        new Solution().solution();
+        // 백준용 실행문
+//        new Solution().solution();
+
+        // 프로그래머스용 실행문
+        print(new Solution().solution(int1DArr));
+
     }
 
     private static void print(Iterable<?> iterableObj) {
