@@ -1,10 +1,10 @@
-import 프로그래머스.레벨1.콜라_문제.Solution;
+import 프로그래머스.레벨1.푸드_파이트_대회.Solution;
 
 import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        int[] int1DArr = {-1, 1, -1, 1};
+        int[] int1DArr = {1, 7, 1, 2};
         int[] int1DArr2 = {3, 4};
         int[][] int2DArr = {
                 {1,1,7,4},
@@ -49,7 +49,7 @@ public class Main {
 //        new Solution().solution();
 
         // 프로그래머스용 실행문
-        print(new Solution().solution(3, 2, 4));
+        print(new Solution().solution(int1DArr));
 
     }
 
