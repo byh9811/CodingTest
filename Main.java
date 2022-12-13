@@ -1,4 +1,4 @@
-import 프로그래머스.레벨1.삼총사.Solution;
+import 프로그래머스.레벨1.콜라_문제.Solution;
 
 import java.util.Arrays;
 
@@ -49,7 +49,7 @@ public class Main {
 //        new Solution().solution();
 
         // 프로그래머스용 실행문
-        print(new Solution().solution(int1DArr));
+        print(new Solution().solution(3, 2, 4));
 
     }
 
