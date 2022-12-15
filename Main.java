@@ -1,4 +1,4 @@
-import 프로그래머스.레벨1.푸드_파이트_대회.Solution;
+import 프로그래머스.레벨1.가장_가까운_같은_글자.Solution;
 
 import java.util.Arrays;
 
@@ -49,7 +49,7 @@ public class Main {
 //        new Solution().solution();
 
         // 프로그래머스용 실행문
-        print(new Solution().solution(int1DArr));
+        print(new Solution().solution("foobar"));
 
     }
 
