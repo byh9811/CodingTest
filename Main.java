@@ -1,10 +1,10 @@
-import 프로그래머스.레벨1.가장_가까운_같은_글자.Solution;
+import 프로그래머스.레벨1.과일_장수.Solution;
 
 import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        int[] int1DArr = {1, 7, 1, 2};
+        int[] int1DArr = {4, 1, 2, 2, 4, 4, 4, 4, 1, 2, 4, 2};
         int[] int1DArr2 = {3, 4};
         int[][] int2DArr = {
                 {1,1,7,4},
@@ -49,7 +49,7 @@ public class Main {
 //        new Solution().solution();
 
         // 프로그래머스용 실행문
-        print(new Solution().solution("foobar"));
+        print(new Solution().solution(4, 3, int1DArr));
 
     }
 
