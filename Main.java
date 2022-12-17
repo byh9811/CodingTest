@@ -1,10 +1,10 @@
-import 프로그래머스.레벨1.숫자_짝궁.Solution;
+import 프로그래머스.레벨1.명예의_전당.Solution;
 
 import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        int[] int1DArr = {4, 1, 2, 2, 4, 4, 4, 4, 1, 2, 4, 2};
+        int[] int1DArr = {0, 300, 40, 300, 20, 70, 150, 50, 500, 1000};
         int[] int1DArr2 = {3, 4};
         int[][] int2DArr = {
                 {1,1,7,4},
@@ -49,7 +49,7 @@ public class Main {
 //        new Solution().solution();
 
         // 프로그래머스용 실행문
-        print(new Solution().solution("1000000002", "20200"));
+        print(new Solution().solution(4, int1DArr));
 
     }
 
