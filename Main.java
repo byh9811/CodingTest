@@ -1,4 +1,4 @@
-import 프로그래머스.레벨1.과일_장수.Solution;
+import 프로그래머스.레벨1.숫자_짝궁.Solution;
 
 import java.util.Arrays;
 
@@ -49,7 +49,7 @@ public class Main {
 //        new Solution().solution();
 
         // 프로그래머스용 실행문
-        print(new Solution().solution(4, 3, int1DArr));
+        print(new Solution().solution("1000000002", "20200"));
 
     }
 
