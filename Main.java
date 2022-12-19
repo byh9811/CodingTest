@@ -1,4 +1,4 @@
-import 프로그래머스.레벨1.명예의_전당.Solution;
+import 프로그래머스.레벨1.기사단원의_무기.Solution;
 
 import java.util.Arrays;
 
@@ -49,7 +49,7 @@ public class Main {
 //        new Solution().solution();
 
         // 프로그래머스용 실행문
-        print(new Solution().solution(4, int1DArr));
+        print(new Solution().solution(5, 3, 2));
 
     }
 
