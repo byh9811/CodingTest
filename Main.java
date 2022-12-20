@@ -1,4 +1,4 @@
-import 프로그래머스.레벨1.기사단원의_무기.Solution;
+import 프로그래머스.레벨1.옹알이.Solution;
 
 import java.util.Arrays;
 
@@ -17,7 +17,7 @@ public class Main {
                 {5,6}
         };
 
-        String[] str1DArr = {"AN", "CF", "MJ", "RT", "NA"};
+        String[] str1DArr = {"aya"};
         String[][] str2DArr = {
                 {"100","ryan","music","2"},
                 {"200","apeach","math","2"},
@@ -49,7 +49,7 @@ public class Main {
 //        new Solution().solution();
 
         // 프로그래머스용 실행문
-        print(new Solution().solution(5, 3, 2));
+        print(new Solution().solution(str1DArr));
 
     }
 
