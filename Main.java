@@ -1,10 +1,10 @@
-import 프로그래머스.레벨1.옹알이.Solution;
+import 프로그래머스.레벨1.햄버거_만들기.Solution;
 
 import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        int[] int1DArr = {0, 300, 40, 300, 20, 70, 150, 50, 500, 1000};
+        int[] int1DArr = {1, 3, 2, 1, 2, 1, 3, 1, 2};
         int[] int1DArr2 = {3, 4};
         int[][] int2DArr = {
                 {1,1,7,4},
@@ -49,7 +49,7 @@ public class Main {
 //        new Solution().solution();
 
         // 프로그래머스용 실행문
-        print(new Solution().solution(str1DArr));
+        print(new Solution().solution(int1DArr));
 
     }
 
