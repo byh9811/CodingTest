@@ -1,4 +1,4 @@
-import 프로그래머스.레벨1.크기가_작은_부분문자열.Solution;
+import 프로그래머스.레벨0.나머지_구하기.Solution;
 
 import java.util.Arrays;
 
@@ -49,7 +49,7 @@ public class Main {
 //        new Solution().solution();
 
         // 프로그래머스용 실행문
-        print(new Solution().solution("10203", "15"));
+        print(new Solution().solution(3, 2));
 
     }
 
