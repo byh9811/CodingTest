@@ -1,4 +1,4 @@
-import 프로그래머스.레벨0.나머지_구하기.Solution;
+import 프로그래머스.레벨0.두_수의_차.Solution;
 
 import java.util.Arrays;
 
