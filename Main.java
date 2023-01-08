@@ -1,4 +1,4 @@
-import SWEA.D2.스도쿠_검증.Solution;
+import SWEA.D2.두_개의_숫자열.Solution;
 
 import java.util.Arrays;
 
