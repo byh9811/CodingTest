@@ -1,4 +1,4 @@
-import 프로그래머스.레벨0.두_수의_차.Solution;
+import SWEA.D2.스도쿠_검증.Solution;
 
 import java.util.Arrays;
 
@@ -46,11 +46,10 @@ public class Main {
         };
 
         // 백준용 실행문
-//        new Solution().solution();
+        new Solution().solution();
 
         // 프로그래머스용 실행문
-        print(new Solution().solution(3, 2));
-
+//        print(new Solution().solution(3, 2));
     }
 
     private static void print(Iterable<?> iterableObj) {
