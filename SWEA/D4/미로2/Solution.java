@@ -1,4 +1,4 @@
-package SWEA.D2.미로2;
+package SWEA.D4.미로2;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
