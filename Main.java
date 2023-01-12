@@ -1,4 +1,4 @@
-import SWEA.D4.보급로.Solution;
+import SWEA.D4.준환이의_양팔저울.Solution;
 
 import java.util.Arrays;
 
