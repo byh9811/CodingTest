@@ -1,4 +1,4 @@
-import SWEA.D4.준환이의_양팔저울.Solution;
+import SWEA.D5.최적_경로.Solution;
 
 import java.util.Arrays;
 
