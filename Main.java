@@ -1,4 +1,4 @@
-import SWEA.D5.최적_경로.Solution;
+import SWEA.D5.공통_조상.Solution;
 
 import java.util.Arrays;
 
