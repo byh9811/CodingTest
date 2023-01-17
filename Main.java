@@ -1,4 +1,4 @@
-import SWEA.D3.XOR_2차원_배열.Solution;
+import SWEA.D3.평행사변형.Solution;
 
 import java.util.Arrays;
 
