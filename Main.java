@@ -1,4 +1,4 @@
-import SWEA.D3.평행사변형.Solution;
+import 프로그래머스.레벨1.개인정보_수집_유효기간.Solution;
 
 import java.util.Arrays;
 
@@ -17,7 +17,8 @@ public class Main {
                 {5,6}
         };
 
-        String[] str1DArr = {"aya"};
+        String[] str1DArr = {"A 6", "B 12", "C 3"};
+        String[] str1DArr2 = {"2021.05.02 A", "2021.07.01 B", "2022.02.19 C", "2022.02.20 C"};
         String[][] str2DArr = {
                 {"100","ryan","music","2"},
                 {"200","apeach","math","2"},
@@ -46,10 +47,10 @@ public class Main {
         };
 
         // 백준용 실행문
-        new Solution().solution();
+//        new Solution().solution();
 
         // 프로그래머스용 실행문
-//        print(new Solution().solution(3, 2));
+        print(new Solution().solution("2020.01.01", str1DArr, str1DArr2));
     }
 
     private static void print(Iterable<?> iterableObj) {
