@@ -1,10 +1,10 @@
-import 프로그래머스.레벨1.개인정보_수집_유효기간.Solution;
+import 프로그래머스.레벨2.귤_고르기.Solution;
 
 import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        int[] int1DArr = {1, 3, 2, 1, 2, 1, 3, 1, 2};
+        int[] int1DArr = {1, 1, 1, 1, 2, 2, 2, 3};
         int[] int1DArr2 = {3, 4};
         int[][] int2DArr = {
                 {1,1,7,4},
@@ -50,7 +50,7 @@ public class Main {
 //        new Solution().solution();
 
         // 프로그래머스용 실행문
-        print(new Solution().solution("2020.01.01", str1DArr, str1DArr2));
+        print(new Solution().solution(2, int1DArr));
     }
 
     private static void print(Iterable<?> iterableObj) {
