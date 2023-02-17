@@ -2,3 +2,4 @@ out
 .idea
 .idea/*.xml
 *.iml
+.metadata
