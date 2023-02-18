@@ -1,4 +1,4 @@
-package 백준.골드4;
+package 백준.골드4.배열돌리기4;
 
 import java.io.BufferedReader;
 import java.io.IOException;
