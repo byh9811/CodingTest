@@ -9,7 +9,7 @@ import java.util.Queue;
  * 3. .을 기준으로 BFS ㄱㄱ
  *
  */
-class Solution {
+public class Solution {
     char[][] map;
     int[] dx = {-1, 0, 1, 0};
     int[] dy = {0, -1, 0, 1};
@@ -52,7 +52,7 @@ class Solution {
             for(int k=0; k<4; k++) {
                 int nextX = x + dx[k];
                 int nextY = y + dy[k];
-                if(nextX>=0 && nextX<map[0].length && nextY>=0 && nextY<map.length && !visited[nextY][nextX] )
+                if(nextX>=0 && nextX<map[0].length && nextY>=0 && nextY<map.length && !visited[nextY][nextX] );
             }
         }
 
