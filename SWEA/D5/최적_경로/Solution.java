@@ -1,70 +1,72 @@
 package SWEA.D5.최적_경로;
 
+import static java.lang.Integer.parseInt;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.Arrays;
-import java.util.StringTokenizer;
+import java.util.*;
 
-/*
-* 1. N의 범위가 2~10이므로 완전탐색(순열)을 사용하면 될 것 같다.
-* 2. 각 고객을 방문할 때 Math.abs()를 이용하여 맨하탄 거리를 구하고 더한다.
-* 3. 각 거리들 중 최단 거리를 출력한다.
-* */
+/**
+ * 최적 경로
+ * https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV15OZ4qAPICFAYD
+ *
+ * 1. 기사의 좌표를 dfs의 매개변수로 넘기면서 진행한다.
+ * 2. 각 집의 좌표를 미리 저장해두고 dfs로 모든 경우의 수를 탐색한다.
+ * 3. 진행하면서 누적 거리를 계산하고, 가장 짧은 누적 거리를 저장하여 출력한다.
+ *
+ * @author 배용현
+ *
+ */
 public class Solution {
-    int N, answer;
 
-    public void solution() throws Exception {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int T = Integer.parseInt(br.readLine());
-        for (int test_case = 1; test_case <= T; test_case++) {
-            N = Integer.parseInt(br.readLine());
-            answer = Integer.MAX_VALUE;
-            int[][] arr = new int[N+2][2];      // arr[0] => 회사, arr[1] => 집, arr[n][0] => x좌표, arr[n][0] => y좌표
+    static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    static int N, x, y, homeX, homeY, answer;
+    static boolean[] visited;		// 해당 고객을 방문했는지 확인하는 방문 배열
+    static int[][] customer;		// 고객의 위치 정보 (0: x, 1: y)
+
+    public static void main(String[] args) throws Exception {
+        int T = parseInt(br.readLine());
+        StringBuilder sb = new StringBuilder();
+
+        for(int tc=1; tc<=T; tc++) {
             StringTokenizer st = new StringTokenizer(br.readLine());
-            for(int i=0; i<arr.length; i++) {
-                arr[i][0] = Integer.parseInt(st.nextToken());
-                arr[i][1] = Integer.parseInt(st.nextToken());
-            }
-            int[] order = new int[N];
-            boolean[] visited = new boolean[N+2];
-            recur(arr, order, visited, 0);
+            N = parseInt(st.nextToken());
+            st = new StringTokenizer(br.readLine());
+            x = parseInt(st.nextToken());
+            y = parseInt(st.nextToken());
+            homeX = parseInt(st.nextToken());
+            homeY = parseInt(st.nextToken());
+            answer = Integer.MAX_VALUE;
+            customer = new int[N][2];
+            visited = new boolean[N];
 
-            System.out.printf("#%d %d\n", test_case, answer);
+            for(int i=0; i<N; i++) {
+                customer[i][0] = parseInt(st.nextToken());
+                customer[i][1] = parseInt(st.nextToken());
+            }
+
+            dfs(x, y, 0, 0);
+            sb.append('#').append(tc).append(' ').append(answer).append('\n');
         }
+
+        System.out.println(sb);
     }
 
-    private void recur(int[][] arr, int[] order, boolean[] visited, int depth) {
-        if(depth==N) {
-            answer = Math.min(answer, calManDis(arr, order));
+    private static void dfs(int x, int y, int depth, int sum) {		// 고객 집에 찾아가는 순열을 구하는 재귀 메서드
+        if(depth==N) {		// 전부 방문했으면
+            sum += Math.abs(x-homeX) + Math.abs(y-homeY);		// 마지막 집으로 돌아가는 거리까지 더해서
+            answer = Math.min(answer, sum);		// 정답에 최솟값 저장
+
             return;
         }
 
-        for(int i=2; i<arr.length; i++) {
-            if(visited[i])
+        for(int i=0; i<N; i++) {		// 고객 N명 순서 뽑기
+            if(visited[i])		// 이미 방문 했으면 패스
                 continue;
 
             visited[i] = true;
-            order[depth] = i;
-            recur(arr, order, visited, depth+1);
+            dfs(customer[i][0], customer[i][1], depth+1, sum + Math.abs(x-customer[i][0]) + Math.abs(y-customer[i][1]));		// 위치와 누적 거리 갱신해서 재귀 호출
             visited[i] = false;
         }
-    }
-
-    private int calManDis(int[][] arr, int[] order) {
-        int distance = 0;
-        int curX = arr[0][0];
-        int curY = arr[0][1];
-
-        for(int i=0; i<order.length; i++) {
-            distance += Math.abs(arr[order[i]][0]-curX);
-            distance += Math.abs(arr[order[i]][1]-curY);
-            curX = arr[order[i]][0];
-            curY = arr[order[i]][1];
-        }
-
-        distance += Math.abs(arr[1][0]-curX);
-        distance += Math.abs(arr[1][1]-curY);
-
-        return distance;
     }
 }
