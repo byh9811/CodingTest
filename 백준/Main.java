@@ -2,6 +2,10 @@ package 백준;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.io.IOException;
+import java.util.StringTokenizer;
+
+import static java.lang.Integer.parseInt;
 
 /**
  * 문제 제목
@@ -11,22 +15,29 @@ import java.io.InputStreamReader;
  * 2. 모든 줄에는 주석을 달아놓는다.
  * 3. 메인 메서드는 입력, 로직, 출력부로 나눈다.
  * 4. 기능을 여러 메서드로 구현해야 한다면 잘게 쪼개서 한 메서드가 한 기능만을 구현하도록 만든다.
+ *
+ * @author 배용현
  */
 public class Main {
-    // 공통으로 사용될 것 같은 변수는 static 멤버변수로 작성한다.
+    // 클래스를 만들어 사용하려면 여기에 선언한다.
 
-    public static void main(String[] args) throws Exception {
+
+    // 공통으로 사용될 것 같은 변수는 static 멤버변수로 작성한다.
+    static int N, M;
+    static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    static StringTokenizer st;
+    static StringBuilder sb = new StringBuilder();
+    static int[][] map;
+
+    public static void main(String[] args) throws IOException {
         // 입력 처리 & 지역 변수 선언
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int n = Integer.parseInt(br.readLine());
-        int sum = 0;
+        N = parseInt(br.readLine());
 
         // 로직 구현
-        for(int i=1; i<=n; i++) {
-            sum += i;
-        }
+
 
         // 출력 처리
-        System.out.println(sum);
+
+
     }
 }
