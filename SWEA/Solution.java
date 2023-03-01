@@ -3,6 +3,7 @@ package SWEA;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
+import java.util.StringTokenizer;
 
 import static java.lang.Integer.parseInt;
 
@@ -19,12 +20,13 @@ public class Solution {
     // 공통으로 사용될 것 같은 변수는 static 멤버변수로 작성한다.
     static int T, N;
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    static StringTokenizer st;
     static StringBuilder sb = new StringBuilder();
     static int[][] map;
 
     public static void main(String[] args) throws IOException {
         // 입력 처리 & 지역 변수 선언
-
+        T = parseInt(br.readLine());
 
         // 로직 구현
 
