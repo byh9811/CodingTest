@@ -255,4 +255,11 @@ public final class Utils {
         return Arrays.stream(arr).mapToInt(i -> i).toArray();
     }
 
+    public static String convertBracket(String str) {
+        str = str.replace('[', '{');
+        str = str.replace('(', '{');
+        str = str.replace(']', '}');
+        str = str.replace(')', '}');
+        return str;
+    }
 }
