@@ -1,0 +1,11 @@
+/*
+    1. group by car_id
+    2. having 평균 대여 기간 >= 7일
+    3. ceil (대여기간,2)
+    4. order by 대여기간 desc, car_id desc
+*/
+SELECT CAR_ID, ROUND(AVG(DATEDIFF(END_DATE, START_DATE)) + 1, 1) AS 'AVERAGE_DURATION'
+FROM CAR_RENTAL_COMPANY_RENTAL_HISTORY
+GROUP BY CAR_ID
+HAVING AVERAGE_DURATION >= 7.0
+ORDER BY AVERAGE_DURATION DESC, CAR_ID DESC;
